@@ -14,5 +14,7 @@
     "git": "git@github.com:chinaxxren/VVFrame.git",
     "tag": "0.0.1"
   },
-  "source_files": "Source/Classes/**/*.*"
+  "source_files": "Source/Classes/**/*.*",
+  "swift_versions": "5.0",
+  "swift_version": "5.0"
 }

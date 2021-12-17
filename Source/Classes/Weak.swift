@@ -2,7 +2,7 @@
 //  Copyright © 2019 Rosberry. All rights reserved.
 //
 
-protocol Weak: class {
+protocol Weak: AnyObject {
     associatedtype T: AnyObject
     var object: T? { get }
 }

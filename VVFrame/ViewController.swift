@@ -8,12 +8,32 @@
 import UIKit
 
 class ViewController: UIViewController {
+    // MARK: - Subviews
 
+    private lazy var descriptionLabel: UILabel = {
+        let view = UILabel()
+        view.adjustsFontSizeToFitWidth = true
+        view.text =  "aaaa"
+        view.numberOfLines = 0
+        return view
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        if #available(iOS 13.0, *) {
+            view.backgroundColor = .systemBackground
+        } else {
+            view.backgroundColor = .white
+        }
+        view.addSubview(descriptionLabel)
     }
 
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
 
+        descriptionLabel.configureFrame { maker in
+            maker.left(inset: 16).right(inset: 16).top(to: view.nui_safeArea.top, inset: 30).height(50)
+        }
+    }
 }
 

@@ -8,4 +8,5 @@ Pod::Spec.new do |spec|
   spec.platform     = :ios, "10.0"
   spec.source       = { :git => "git@github.com:chinaxxren/VVFrame.git", :tag => "#{spec.version}" }
   spec.source_files = 'Source/Classes/**/*.*'
+  spec.swift_version   = "5.0"
 end

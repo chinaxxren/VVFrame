@@ -52,7 +52,7 @@
 /* Begin PBXFileReference section */
 		02D9EAF6AFD3C5DED0E7357C6C455AC0 /* MakerHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MakerHelper.swift; path = Source/Classes/MakerHelper.swift; sourceTree = "<group>"; };
 		02F29FB6137CE582610E9B2F23F03583 /* Maker+Size.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Maker+Size.swift"; sourceTree = "<group>"; };
-		05BEECEB61D6333D583B0E975FE4DCAC /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		05BEECEB61D6333D583B0E975FE4DCAC /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		16096B5B837B3392BEC951CE683FAF6B /* Pods-VVFrameDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VVFrameDemo.release.xcconfig"; sourceTree = "<group>"; };
 		21E2E28864B3FFC9657DD7F8A12FADCB /* VVFrame-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "VVFrame-umbrella.h"; sourceTree = "<group>"; };
 		2268F6EC587F782B1CDC1D6231D11EAC /* Pods-VVFrameDemo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-VVFrameDemo.modulemap"; sourceTree = "<group>"; };
@@ -74,8 +74,8 @@
 		81F704CD1E8FFA4DA52B1A30AE248345 /* SafeArea.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SafeArea.swift; path = Source/Classes/SafeArea.swift; sourceTree = "<group>"; };
 		83C30FA65B38BDB0D36E1ED1B4BB9222 /* ElementType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ElementType.swift; path = Source/Classes/ElementType.swift; sourceTree = "<group>"; };
 		8A1CFEE077857D33489E194FC7A108E1 /* Maker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Maker.swift; sourceTree = "<group>"; };
-		916AEACEE3F20F43F7FDD46E8607EB46 /* Pods-VVFrameDemo */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-VVFrameDemo"; path = Pods_VVFrameDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		916AEACEE3F20F43F7FDD46E8607EB46 /* Pods_VVFrameDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VVFrameDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9F3D18C5FC16593E7FF0A29B5AA10460 /* UIView+Installer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIView+Installer.swift"; sourceTree = "<group>"; };
 		A0D8DC04B2E32272969554D6A8EFA900 /* Keyboard.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Keyboard.swift; path = Source/Classes/Keyboard.swift; sourceTree = "<group>"; };
 		A1F383E0ED6C961A97BA5033FC9018F8 /* UIView+Keyboard.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIView+Keyboard.swift"; sourceTree = "<group>"; };
@@ -88,13 +88,13 @@
 		C0C1A234ABAAEDB043AC0E922DC341F3 /* Maker+Position.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Maker+Position.swift"; sourceTree = "<group>"; };
 		C1AEDE7F85C8D7890548E61A28FE90F2 /* VVFrame.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = VVFrame.debug.xcconfig; sourceTree = "<group>"; };
 		CF6AEA9507C7D7CF4E238AE7861E821E /* Pods-VVFrameDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-VVFrameDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
-		D7B302A6EB1445E8E3B2D885890D708B /* VVFrame */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = VVFrame; path = VVFrame.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7B302A6EB1445E8E3B2D885890D708B /* VVFrame.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = VVFrame.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E100B4AFAE6FF054E4C3F1C5E8C4C0D1 /* VVFrame-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "VVFrame-prefix.pch"; sourceTree = "<group>"; };
 		E719BF2B5F97B981C8CA31A51DF6633A /* Maker+Edges.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Maker+Edges.swift"; sourceTree = "<group>"; };
 		E8288D532FFE4FD1BC49E80853E4134B /* Maker+Relations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Maker+Relations.swift"; path = "Source/Classes/Maker+Relations.swift"; sourceTree = "<group>"; };
 		EA548F9B90FBC71A921931011CAB46A7 /* Relations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Relations.swift; path = Source/Classes/Relations.swift; sourceTree = "<group>"; };
 		F17DA5E3BA2659086E105B917E9D4DAE /* Pods-VVFrameDemo-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-VVFrameDemo-Info.plist"; sourceTree = "<group>"; };
-		F89A0DFA1052B1BDCED80895FD58215C /* VVFrame.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = VVFrame.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		F89A0DFA1052B1BDCED80895FD58215C /* VVFrame.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = VVFrame.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		FF639B715C7947EE2C211463876A0A47 /* Maker+Equal.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Maker+Equal.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -130,8 +130,8 @@
 		171F13BB3F3AAE2093CBE3CE1F7548DB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				916AEACEE3F20F43F7FDD46E8607EB46 /* Pods-VVFrameDemo */,
-				D7B302A6EB1445E8E3B2D885890D708B /* VVFrame */,
+				916AEACEE3F20F43F7FDD46E8607EB46 /* Pods_VVFrameDemo.framework */,
+				D7B302A6EB1445E8E3B2D885890D708B /* VVFrame.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -301,7 +301,7 @@
 			);
 			name = "Pods-VVFrameDemo";
 			productName = Pods_VVFrameDemo;
-			productReference = 916AEACEE3F20F43F7FDD46E8607EB46 /* Pods-VVFrameDemo */;
+			productReference = 916AEACEE3F20F43F7FDD46E8607EB46 /* Pods_VVFrameDemo.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		BC93CE765D2F8E97A605CF185FF6FFA9 /* VVFrame */ = {
@@ -319,7 +319,7 @@
 			);
 			name = VVFrame;
 			productName = VVFrame;
-			productReference = D7B302A6EB1445E8E3B2D885890D708B /* VVFrame */;
+			productReference = D7B302A6EB1445E8E3B2D885890D708B /* VVFrame.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -329,7 +329,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1240;
-				LastUpgradeCheck = 1240;
+				LastUpgradeCheck = 1310;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 13.0";
@@ -436,7 +436,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/VVFrame/VVFrame-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/VVFrame/VVFrame-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -472,7 +472,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-VVFrameDemo/Pods-VVFrameDemo-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -544,7 +544,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -572,7 +572,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/VVFrame/VVFrame-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/VVFrame/VVFrame-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -607,7 +607,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-VVFrameDemo/Pods-VVFrameDemo-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -681,7 +681,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
