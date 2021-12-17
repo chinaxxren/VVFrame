@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6A2C87A44B278246C439769D /* libPods-VVFrame.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 89561885EE0C3B28DC675C03 /* libPods-VVFrame.a */; };
+		4B0862D83B7634CA6D315E55 /* Pods_VVFrameDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EDC8AB352FB799B8FD78026 /* Pods_VVFrameDemo.framework */; };
 		82373E35276C9529002E061E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82373E34276C9529002E061E /* AppDelegate.swift */; };
 		82373E37276C9529002E061E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82373E36276C9529002E061E /* SceneDelegate.swift */; };
 		82373E39276C9529002E061E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82373E38276C9529002E061E /* ViewController.swift */; };
@@ -31,7 +31,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		82373E31276C9529002E061E /* VVFrame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VVFrame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		17F46392ABB5B367E411ED7F /* Pods-VVFrameDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VVFrameDemo.debug.xcconfig"; path = "Target Support Files/Pods-VVFrameDemo/Pods-VVFrameDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		35F050EE35011D8E595A6BF7 /* Pods-VVFrameDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VVFrameDemo.release.xcconfig"; path = "Target Support Files/Pods-VVFrameDemo/Pods-VVFrameDemo.release.xcconfig"; sourceTree = "<group>"; };
+		6EDC8AB352FB799B8FD78026 /* Pods_VVFrameDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VVFrameDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		82373E31276C9529002E061E /* VVFrameDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VVFrameDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		82373E34276C9529002E061E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		82373E36276C9529002E061E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		82373E38276C9529002E061E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -52,8 +55,7 @@
 		82373E87276C9588002E061E /* SliderFeatureView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SliderFeatureView.swift; sourceTree = "<group>"; };
 		82373E88276C9588002E061E /* KeyboardFeatureView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardFeatureView.swift; sourceTree = "<group>"; };
 		82373E89276C9588002E061E /* ExampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleViewController.swift; sourceTree = "<group>"; };
-		82373EC1276C9C3E002E061E /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
-		89561885EE0C3B28DC675C03 /* libPods-VVFrame.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VVFrame.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		82373EC1276C9C3E002E061E /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A28583F39C8E6C30496D7A83 /* Pods-VVFrame.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VVFrame.release.xcconfig"; path = "Target Support Files/Pods-VVFrame/Pods-VVFrame.release.xcconfig"; sourceTree = "<group>"; };
 		C6E09512C3B27018661B458D /* Pods-VVFrame.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VVFrame.debug.xcconfig"; path = "Target Support Files/Pods-VVFrame/Pods-VVFrame.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -63,7 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6A2C87A44B278246C439769D /* libPods-VVFrame.a in Frameworks */,
+				4B0862D83B7634CA6D315E55 /* Pods_VVFrameDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,7 +75,7 @@
 		6B31FF6E44CB617EAB7933C8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				89561885EE0C3B28DC675C03 /* libPods-VVFrame.a */,
+				6EDC8AB352FB799B8FD78026 /* Pods_VVFrameDemo.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -92,7 +94,7 @@
 		82373E32276C9529002E061E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				82373E31276C9529002E061E /* VVFrame.app */,
+				82373E31276C9529002E061E /* VVFrameDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -145,30 +147,32 @@
 			children = (
 				C6E09512C3B27018661B458D /* Pods-VVFrame.debug.xcconfig */,
 				A28583F39C8E6C30496D7A83 /* Pods-VVFrame.release.xcconfig */,
+				17F46392ABB5B367E411ED7F /* Pods-VVFrameDemo.debug.xcconfig */,
+				35F050EE35011D8E595A6BF7 /* Pods-VVFrameDemo.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		82373E30276C9529002E061E /* VVFrame */ = {
+		82373E30276C9529002E061E /* VVFrameDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 82373E45276C952A002E061E /* Build configuration list for PBXNativeTarget "VVFrame" */;
+			buildConfigurationList = 82373E45276C952A002E061E /* Build configuration list for PBXNativeTarget "VVFrameDemo" */;
 			buildPhases = (
 				A6725338AF42BC7C0B7E47EB /* [CP] Check Pods Manifest.lock */,
 				82373E2D276C9529002E061E /* Sources */,
 				82373E2E276C9529002E061E /* Frameworks */,
 				82373E2F276C9529002E061E /* Resources */,
+				CAF38FF218033A230ED2BED6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = VVFrame;
+			name = VVFrameDemo;
 			productName = VVFrame;
-			productReference = 82373E31276C9529002E061E /* VVFrame.app */;
+			productReference = 82373E31276C9529002E061E /* VVFrameDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -186,7 +190,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 82373E2C276C9529002E061E /* Build configuration list for PBXProject "VVFrame" */;
+			buildConfigurationList = 82373E2C276C9529002E061E /* Build configuration list for PBXProject "VVFrameDemo" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -199,7 +203,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				82373E30276C9529002E061E /* VVFrame */,
+				82373E30276C9529002E061E /* VVFrameDemo */,
 			);
 		};
 /* End PBXProject section */
@@ -234,11 +238,28 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-VVFrame-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-VVFrameDemo-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CAF38FF218033A230ED2BED6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VVFrameDemo/Pods-VVFrameDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VVFrameDemo/Pods-VVFrameDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VVFrameDemo/Pods-VVFrameDemo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -407,7 +428,7 @@
 		};
 		82373E46276C952A002E061E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C6E09512C3B27018661B458D /* Pods-VVFrame.debug.xcconfig */;
+			baseConfigurationReference = 17F46392ABB5B367E411ED7F /* Pods-VVFrameDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -436,7 +457,7 @@
 		};
 		82373E47276C952A002E061E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A28583F39C8E6C30496D7A83 /* Pods-VVFrame.release.xcconfig */;
+			baseConfigurationReference = 35F050EE35011D8E595A6BF7 /* Pods-VVFrameDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -466,7 +487,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		82373E2C276C9529002E061E /* Build configuration list for PBXProject "VVFrame" */ = {
+		82373E2C276C9529002E061E /* Build configuration list for PBXProject "VVFrameDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				82373E43276C952A002E061E /* Debug */,
@@ -475,7 +496,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		82373E45276C952A002E061E /* Build configuration list for PBXNativeTarget "VVFrame" */ = {
+		82373E45276C952A002E061E /* Build configuration list for PBXNativeTarget "VVFrameDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				82373E46276C952A002E061E /* Debug */,

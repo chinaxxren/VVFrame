@@ -3,6 +3,7 @@
 //
 
 import UIKit
+import VVFrame
 
 final class KeyboardFeatureView: FeatureView {
 

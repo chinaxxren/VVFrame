@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_VVFrameVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_VVFrameVersionString[];
+FOUNDATION_EXPORT double Pods_VVFrameDemoVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_VVFrameDemoVersionString[];
 

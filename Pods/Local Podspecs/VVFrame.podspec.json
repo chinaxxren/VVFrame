@@ -11,7 +11,7 @@
     "ios": "10.0"
   },
   "source": {
-    "git": "https://github.com/chinaxxren/VVFrame.git",
+    "git": "git@github.com:chinaxxren/VVFrame.git",
     "tag": "0.0.1"
   },
   "source_files": "Source/Classes/**/*.*"

@@ -1,5 +1,7 @@
+use_frameworks!
+
 platform :ios, '10.0'
 
-target "VVFrame" do
+target "VVFrameDemo" do
     pod 'VVFrame', :path => './'
 end
