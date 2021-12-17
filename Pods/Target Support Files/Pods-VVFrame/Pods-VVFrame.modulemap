@@ -1,0 +1,6 @@
+module Pods_VVFrame {
+  umbrella header "Pods-VVFrame-umbrella.h"
+
+  export *
+  module * { export * }
+}

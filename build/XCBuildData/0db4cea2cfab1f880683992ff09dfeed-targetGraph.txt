@@ -1,0 +1,4 @@
+Target dependency graph (2 targets)
+VVFrame in Pods, no dependencies
+Pods-VVFrame in Pods, depends on:
+VVFrame in Pods (explicit)

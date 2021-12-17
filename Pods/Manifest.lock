@@ -1,0 +1,16 @@
+PODS:
+  - VVFrame (0.0.1)
+
+DEPENDENCIES:
+  - VVFrame (from `./`)
+
+EXTERNAL SOURCES:
+  VVFrame:
+    :path: "./"
+
+SPEC CHECKSUMS:
+  VVFrame: 475a9d03c1f2bd2e79fa7f83a30fdf4284734817
+
+PODFILE CHECKSUM: 95e726ff1b2dd606f727872bf55eeb2858536c31
+
+COCOAPODS: 1.11.2

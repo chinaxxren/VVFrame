@@ -1,0 +1,6 @@
+module VVFrame {
+  umbrella header "VVFrame-umbrella.h"
+
+  export *
+  module * { export * }
+}
