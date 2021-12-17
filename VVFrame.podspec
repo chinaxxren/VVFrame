@@ -6,6 +6,6 @@ Pod::Spec.new do |spec|
   spec.license      = "MIT"
   spec.author       = { "chinaxxren" => "jiangmingz@qq.com" }
   spec.platform     = :ios, "10.0"
-  spec.source       = { :git => "https://github.com/chinaxxren/VVFrame.git", :tag => "#{spec.version}" }
+  spec.source       = { :git => "git@github.com:chinaxxren/VVFrame.git", :tag => "#{spec.version}" }
   spec.source_files = 'Source/Classes/**/*.*'
 end
