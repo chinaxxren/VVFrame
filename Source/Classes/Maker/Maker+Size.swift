@@ -32,7 +32,7 @@ extension Maker {
     /// - parameter multiplier:     The multiplier for views relation. Default multiplier value: 1.
     ///
     /// - returns: `Maker` instance for chaining relations.
-    @discardableResult public func width(to relationView: RelationView<SizeRelation>, multiplier: Number = 1.0) -> Self {
+    @discardableResult public func width(_ relationView: RelationView<SizeRelation>,_ multiplier: Number = 1.0) -> Self {
         let element = relationView.element
         let relationType = relationView.relationType
 
@@ -88,7 +88,7 @@ extension Maker {
     /// - parameter multiplier:     The multiplier for views relation. Default multiplier value: 1.
     ///
     /// - returns: `Maker` instance for chaining relations.
-    @discardableResult public func height(to relationView: RelationView<SizeRelation>, multiplier: Number = 1.0) -> Self {
+    @discardableResult public func height(_ relationView: RelationView<SizeRelation>,_ multiplier: Number = 1.0) -> Self {
         let element = relationView.element
         let relationType = relationView.relationType
 
