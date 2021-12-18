@@ -1,5 +1,5 @@
 //
-//  Copyright © 2020 Rosberry. All rights reserved.
+//  Copyright © 2021 chinaxxren. All rights reserved.
 //
 
 import UIKit
@@ -13,12 +13,12 @@ extension Maker {
     /// - parameter inset: The inset for additional space between instances. Default value: 0.
     ///
     /// - returns: `Maker` instance for chaining relations.
-    @discardableResult public func left(inset: Number = 0.0) -> Self {
+    @discardableResult public func left(_ inset: Number = 0.0) -> Self {
         guard let superelement = element.superelement else {
             assertionFailure("Can not configure left relation to superview without super instance.")
             return self
         }
-        return left(to: RelationView(element: superelement, relation: .left), inset: inset)
+        return left(RelationView(element: superelement, relation: .left), inset)
     }
 
     /// Creates left relation.
@@ -31,7 +31,7 @@ extension Maker {
     /// - parameter inset:          The inset for additional space between views. Default value: 0.
     ///
     /// - returns: `Maker` instance for chaining relations.
-    @discardableResult public func left(to relationView: RelationView<HorizontalRelation>, inset: Number = 0.0) -> Self {
+    @discardableResult public func left(_ relationView: RelationView<HorizontalRelation>, _ inset: Number = 0.0) -> Self {
         let element = relationView.element
         let relationType = relationView.relationType
 
@@ -51,12 +51,12 @@ extension Maker {
     /// - parameter inset: The inset for additional space between views. Default value: 0.
     ///
     /// - returns: `Maker` instance for chaining relations.
-    @discardableResult public func top(inset: Number = 0.0) -> Self {
+    @discardableResult public func top(_ inset: Number = 0.0) -> Self {
         guard let superelement = element.superelement else {
             assertionFailure("Can not configure a top relation to superview without superview.")
             return self
         }
-        return top(to: RelationView(element: superelement, relation: .top), inset: inset.value)
+        return top(RelationView(element: superelement, relation: .top), inset.value)
     }
 
     /// Creates top relation.
@@ -69,8 +69,8 @@ extension Maker {
     /// - parameter inset:         The inset for additional space between views. Default value: 0.
     ///
     /// - returns: `Maker` instance for chaining relations.
-    @discardableResult public func top(to relationView: RelationView<VerticalRelation>, inset: Number = 0.0) -> Self {
-       let element = relationView.element
+    @discardableResult public func top(_ relationView: RelationView<VerticalRelation>, _ inset: Number = 0.0) -> Self {
+        let element = relationView.element
         let relationType = relationView.relationType
 
         let handler = { [unowned self] in
@@ -101,12 +101,12 @@ extension Maker {
     /// - parameter inset: The inset for additional space between instances. Default value: 0.
     ///
     /// - returns: `Maker` instance for chaining relations.
-    @discardableResult public func bottom(inset: Number = 0.0) -> Self {
+    @discardableResult public func bottom(_ inset: Number = 0.0) -> Self {
         guard let superelement = element.superelement else {
             assertionFailure("Can not configure a bottom relation to superview without superview.")
             return self
         }
-        return bottom(to: RelationView(element: superelement, relation: .bottom), inset: inset)
+        return bottom(RelationView(element: superelement, relation: .bottom), inset)
     }
 
     /// Creates bottom relation.
@@ -119,7 +119,7 @@ extension Maker {
     /// - parameter inset:          The inset for additional space between views. Default value: 0.
     ///
     /// - returns: `Maker` instance for chaining relations.
-    @discardableResult public func bottom(to relationView: RelationView<VerticalRelation>, inset: Number = 0.0) -> Self {
+    @discardableResult public func bottom(_ relationView: RelationView<VerticalRelation>, _ inset: Number = 0.0) -> Self {
         let element = relationView.element
         let relationType = relationView.relationType
 
@@ -127,8 +127,7 @@ extension Maker {
             if self.topParameter != nil {
                 let height = abs(self.newRect.minY - self.convertedValue(for: relationType, with: element)) - inset.value
                 self.newRect.setValue(height, for: .height)
-            }
-            else {
+            } else {
                 let y = self.convertedValue(for: relationType, with: element) - inset.value - self.newRect.height
                 self.newRect.setValue(y, for: .top)
             }
@@ -145,12 +144,12 @@ extension Maker {
     /// - parameter inset: The inset for additional space between instances. Default value: 0.
     ///
     /// - returns: `Maker` instance for chaining relations.
-    @discardableResult public func right(inset: Number = 0.0) -> Self {
+    @discardableResult public func right(_ inset: Number = 0.0) -> Self {
         guard let superelement = element.superelement else {
             assertionFailure("Can not configure a right relation to superview without super instance.")
             return self
         }
-        return right(to: RelationView(element: superelement, relation: .right), inset: inset.value)
+        return right(RelationView(element: superelement, relation: .right), inset.value)
     }
 
     /// Creates right relation.
@@ -163,7 +162,7 @@ extension Maker {
     /// - parameter inset:            The inset for additional space between views. Default value: 0.
     ///
     /// - returns: `Maker` instance for chaining relations.
-    @discardableResult public func right(to relationView: RelationView<HorizontalRelation>, inset: Number = 0.0) -> Self {
+    @discardableResult public func right(_ relationView: RelationView<HorizontalRelation>, _ inset: Number = 0.0) -> Self {
         let element = relationView.element
         let relationType = relationView.relationType
 
@@ -171,8 +170,7 @@ extension Maker {
             if self.leftParameter != nil {
                 let width = abs(self.newRect.minX - self.convertedValue(for: relationType, with: element)) - inset.value
                 self.newRect.setValue(width, for: .width)
-            }
-            else {
+            } else {
                 let x = self.convertedValue(for: relationType, with: element) - inset.value - self.newRect.width
                 self.newRect.setValue(x, for: .left)
             }
@@ -207,8 +205,8 @@ extension Maker {
     ///
     /// - returns: `Maker` instance for chaining relations.
     @discardableResult public func center(to view: UIView) -> Self {
-        return centerX(to: RelationView<HorizontalRelation>(element: .view(view), relation: .centerX))
-            .centerY(to: RelationView<VerticalRelation>(element: .view(view), relation: .centerY))
+        return centerX(RelationView<HorizontalRelation>(element: .view(view), relation: .centerX))
+                .centerY(RelationView<VerticalRelation>(element: .view(view), relation: .centerY))
     }
 
     /// Creates center relation.
@@ -219,8 +217,8 @@ extension Maker {
     ///
     /// - returns: `Maker` instance for chaining relations.
     @discardableResult public func center(to layer: CALayer) -> Self {
-        return centerX(to: RelationView<HorizontalRelation>(element: .layer(layer), relation: .centerX))
-            .centerY(to: RelationView<VerticalRelation>(element: .layer(layer), relation: .centerY))
+        return centerX(RelationView<HorizontalRelation>(element: .layer(layer), relation: .centerX))
+                .centerY(RelationView<VerticalRelation>(element: .layer(layer), relation: .centerY))
     }
 
     /// Creates center relation rotated around center of a specified view.
@@ -232,11 +230,11 @@ extension Maker {
     /// - parameter angle: Angle at which center point will be placed.
     ///
     /// - returns: `Maker` instance for chaining relations.
-    @discardableResult public func center(to view: UIView, radius: CGFloat, angle: CGFloat) -> Self {
+    @discardableResult public func center(_ view: UIView, radius: CGFloat, _ angle: CGFloat) -> Self {
         let offsetX = -radius * cos(-angle)
         let offsetY = radius * sin(-angle)
-        return centerX(to: RelationView<HorizontalRelation>(element: .view(view), relation: .centerX), offset: offsetX)
-            .centerY(to: RelationView<VerticalRelation>(element: .view(view), relation: .centerY), offset: offsetY)
+        return centerX(RelationView<HorizontalRelation>(element: .view(view), relation: .centerX), offsetX)
+                .centerY(RelationView<VerticalRelation>(element: .view(view), relation: .centerY), offsetY)
     }
 
     /// Creates centerY relation.
@@ -246,12 +244,12 @@ extension Maker {
     /// - parameter offset: Additional offset for centerY point. Default value: 0.
     ///
     /// - returns: `Maker` instance for chaining relations.
-    @discardableResult public func centerY(offset: Number = 0.0) -> Self {
+    @discardableResult public func centerY(_ offset: Number = 0.0) -> Self {
         guard let superelement = element.superelement else {
             assertionFailure("Can not configure a centerY relation to superview without super instance.")
             return self
         }
-        return centerY(to: RelationView(element: superelement, relation: .centerY), offset: offset.value)
+        return centerY(RelationView(element: superelement, relation: .centerY), offset.value)
     }
 
     /// Creates centerY relation.
@@ -264,12 +262,12 @@ extension Maker {
     /// - parameter offset:         Additional offset for centerY point. Default value: 0.
     ///
     /// - returns: `Maker` instance for chaining relations.
-    @discardableResult public func centerY(to relationView: RelationView<VerticalRelation>, offset: Number = 0.0) -> Self {
+    @discardableResult public func centerY(_ relationView: RelationView<VerticalRelation>, _ offset: Number = 0.0) -> Self {
         let view = relationView.element
         let relationType = relationView.relationType
 
         let handler = { [unowned self] in
-            let y = self.convertedValue(for: relationType, with: view) - self.newRect.height/2 - offset.value
+            let y = self.convertedValue(for: relationType, with: view) - self.newRect.height / 2 - offset.value
             self.newRect.setValue(y, for: .top)
         }
         handlers.append((.low, handler))
@@ -307,14 +305,14 @@ extension Maker {
         let relationType2 = relationView2.relationType
 
         let handler = { [unowned self] in
-           let y1 = self.convertedValue(for: relationType1, with: view1)
-           let y2 = self.convertedValue(for: relationType2, with: view2)
+            let y1 = self.convertedValue(for: relationType1, with: view1)
+            let y2 = self.convertedValue(for: relationType2, with: view2)
 
-           let topY = y1 < y2 ? y1 : y2
-           let bottomY = y1 >= y2 ? y1 : y2
+            let topY = y1 < y2 ? y1 : y2
+            let bottomY = y1 >= y2 ? y1 : y2
 
-           let y = bottomY - (bottomY - topY)/2 - self.newRect.height/2
-           self.newRect.setValue(y, for: .top)
+            let y = bottomY - (bottomY - topY) / 2 - self.newRect.height / 2
+            self.newRect.setValue(y, for: .top)
         }
         handlers.append((.low, handler))
         return self
@@ -328,12 +326,12 @@ extension Maker {
     ///
     /// - returns: `Maker` instance for chaining relations.
 
-    @discardableResult public func centerX(offset: Number = 0.0) -> Self {
+    @discardableResult public func centerX(_ offset: Number = 0.0) -> Self {
         guard let superelement = element.superelement else {
             assertionFailure("Can not configure a centerX relation to superview without super instance.")
             return self
         }
-        return centerX(to: RelationView(element: superelement, relation: .centerX), offset: offset.value)
+        return centerX(RelationView(element: superelement, relation: .centerX), offset.value)
     }
 
     /// Creates centerX relation.
@@ -346,12 +344,12 @@ extension Maker {
     /// - parameter offset:         Additional offset for centerX point. Default value: 0.
     ///
     /// - returns: `Maker` instance for chaining relations.
-    @discardableResult public func centerX(to relationView: RelationView<HorizontalRelation>, offset: Number = 0.0) -> Self {
+    @discardableResult public func centerX(_ relationView: RelationView<HorizontalRelation>, _ offset: Number = 0.0) -> Self {
         let view = relationView.element
         let relationType = relationView.relationType
 
         let handler = { [unowned self] in
-            let x = self.convertedValue(for: relationType, with: view) - self.newRect.width/2 - offset.value
+            let x = self.convertedValue(for: relationType, with: view) - self.newRect.width / 2 - offset.value
             self.newRect.setValue(x, for: .left)
         }
         handlers.append((.low, handler))
@@ -396,7 +394,7 @@ extension Maker {
             let rightX = x1 < x2 ? x1 : x2
             let leftX = x1 >= x2 ? x1 : x2
 
-            let x = rightX - (rightX - leftX)/2 - self.newRect.width/2
+            let x = rightX - (rightX - leftX) / 2 - self.newRect.width / 2
             self.newRect.setValue(x, for: .left)
         }
         handlers.append((.low, handler))
@@ -408,7 +406,7 @@ extension Maker {
     /// - parameter value: The value for setting centerX.
     ///
     /// - returns: `Maker` instance for chaining relations.
-    @discardableResult public func setCenterX(value: Number) -> Self {
+    @discardableResult public func setCenterX(_ value: Number) -> Self {
         let handler = { [unowned self] in
             self.newRect.setValue(value.value, for: .centerX)
         }
@@ -421,7 +419,7 @@ extension Maker {
     /// - parameter value: The value for setting centerY.
     ///
     /// - returns: `Maker` instance for chaining relations.
-    @discardableResult public func setCenterY(value: Number) -> Self {
+    @discardableResult public func setCenterY(_ value: Number) -> Self {
         let handler = { [unowned self] in
             self.newRect.setValue(value.value, for: .centerY)
         }

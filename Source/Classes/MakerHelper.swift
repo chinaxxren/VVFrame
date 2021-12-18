@@ -1,9 +1,5 @@
 //
-//  MakerHelper.swift
-//  Framezilla
-//
-//  Created by Nikita on 26/08/16.
-//  Copyright © 2016 Nikita. All rights reserved.
+//  Copyright © 2021 chinaxxren. All rights reserved.
 //
 
 import Foundation
@@ -26,10 +22,10 @@ extension Maker {
 
         var convertedRect = rect
         if let superelement = self.element.superelement as? ViewType,
-            let view = element as? ViewType,
-            let superScrollView = superelement.view as? UIScrollView,
-            view.view is UIScrollView,
-            superScrollView.contentSize != .zero {
+           let view = element as? ViewType,
+           let superScrollView = superelement.view as? UIScrollView,
+           view.view is UIScrollView,
+           superScrollView.contentSize != .zero {
             convertedRect.size.width = superScrollView.contentSize.width
             convertedRect.size.height = superScrollView.contentSize.height
         }
@@ -94,8 +90,8 @@ extension CGRect {
         case .height:  frame.size.height = value
         case .left:    frame.origin.x = value
         case .top:     frame.origin.y = value
-        case .centerX: frame.origin.x = value - width/2
-        case .centerY: frame.origin.y = value - height/2
+        case .centerX: frame.origin.x = value - width / 2
+        case .centerY: frame.origin.y = value - height / 2
         default: break
         }
         self = frame

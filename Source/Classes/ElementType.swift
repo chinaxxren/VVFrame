@@ -1,5 +1,5 @@
 //
-//  Copyright © 2020 Rosberry. All rights reserved.
+//  Copyright © 2021 chinaxxren. All rights reserved.
 //
 
 import UIKit
@@ -81,21 +81,21 @@ public class ElementType {
         return layer.convert(rect, from: element.layer)
     }
 
-    static func == (lhs: ElementType, rhs: ElementType) -> Bool {
+    static func ==(lhs: ElementType, rhs: ElementType) -> Bool {
         lhs.layer == rhs.layer
     }
 
-    static func != (lhs: ElementType, rhs: ElementType) -> Bool {
+    static func !=(lhs: ElementType, rhs: ElementType) -> Bool {
         lhs.layer != rhs.layer
     }
 
-    static func === (lhs: ElementType, rhs: ElementType) -> Bool {
+    static func ===(lhs: ElementType, rhs: ElementType) -> Bool {
         type(of: lhs) == type(of: rhs) && lhs.layer === rhs.layer
     }
 }
 
 public class ViewType: ElementType {
-   unowned let view: UIView
+    unowned let view: UIView
 
     var nx_state: AnyHashable {
         get {

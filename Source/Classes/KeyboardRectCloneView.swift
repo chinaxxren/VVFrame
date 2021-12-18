@@ -1,5 +1,5 @@
 //
-//  Copyright © 2019 Rosberry. All rights reserved.
+//  Copyright © 2021 chinaxxren. All rights reserved.
 //
 
 import UIKit
@@ -15,9 +15,9 @@ final class KeyboardRectCloneView: UIView {
         isUserInteractionEnabled = false
 
         NotificationCenter.default.addObserver(self,
-                                               selector: #selector(keyboardFrameChanged),
-                                               name: UIApplication.keyboardWillChangeFrameNotification,
-                                               object: nil)
+                selector: #selector(keyboardFrameChanged),
+                name: UIApplication.keyboardWillChangeFrameNotification,
+                object: nil)
     }
 
     required init?(coder aDecoder: NSCoder) {
@@ -79,8 +79,7 @@ final class KeyboardRectCloneView: UIView {
         if rect.isEmpty, let superview = superview {
             frame = superview.bounds
             frame.origin.y = superview.bounds.maxY
-        }
-        else {
+        } else {
             frame = rect
         }
 

@@ -1,5 +1,5 @@
 //
-//  Copyright © 2019 Rosberry. All rights reserved.
+//  Copyright © 2021 chinaxxren. All rights reserved.
 //
 
 import UIKit
@@ -9,7 +9,7 @@ public final class SafeAreaRelationCollection: EdgeRelationCollection {
 
     override init(element: ElementType) {
         super.init(element: element)
-        
+
         top = .init(element: element, relation: .safeArea(.top))
         left = .init(element: element, relation: .safeArea(.left))
         right = .init(element: element, relation: .safeArea(.right))
@@ -17,7 +17,9 @@ public final class SafeAreaRelationCollection: EdgeRelationCollection {
     }
 }
 
-public struct SafeArea {}
+public struct SafeArea {
+}
+
 @available(*, deprecated, message: "Use `view.safeArea.<type>` instead")
 public var vv_safeArea: SafeArea {
     return SafeArea()

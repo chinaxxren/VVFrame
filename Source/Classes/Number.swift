@@ -1,9 +1,5 @@
 //
-//  Number.swift
-//  Framezilla
-//
-//  Created by Nikita Ermolenko on 19/02/2017.
-//
+//  Copyright © 2021 chinaxxren. All rights reserved.
 //
 
 import Foundation

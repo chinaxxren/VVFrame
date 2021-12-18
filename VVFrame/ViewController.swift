@@ -1,8 +1,5 @@
 //
-//  ViewController.swift
-//  VVFrame
-//
-//  Created by 赵江明 on 2021/12/17.
+//  Copyright © 2021 chinaxxren. All rights reserved.
 //
 
 import UIKit
@@ -14,12 +11,12 @@ class ViewController: UIViewController {
     private lazy var descriptionLabel: UILabel = {
         let view = UILabel()
         view.adjustsFontSizeToFitWidth = true
-        view.text =  "aaaa"
+        view.text = "aaaa"
         view.numberOfLines = 0
         view.backgroundColor = .red
         return view
     }()
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         if #available(iOS 13.0, *) {
@@ -34,8 +31,7 @@ class ViewController: UIViewController {
         super.viewDidLayoutSubviews()
 
         descriptionLabel.makeFrame { maker in
-            maker.left(inset: 16).right(inset: 16).top(to: view.vv_safeArea.top, inset: 30).height(50)
-//            maker.left(16).right(16).top(50).height(50);
+            maker.left(16).right(16).top(view.vv_safeArea.top, 30).height(50)
         }
     }
 }

@@ -1,9 +1,5 @@
 //
-//  Maker+Configurations.swift
-//  Framezilla
-//
-//  Created by Nikita on 27/08/16.
-//  Copyright © 2016 Nikita. All rights reserved.
+//  Copyright © 2021 chinaxxren. All rights reserved.
 //
 
 import Foundation
@@ -20,7 +16,7 @@ postfix operator >>
 ///
 /// - returns: `Maker` instance for chaining relations.
 
-public postfix func << (view: UIView) -> Maker {
+public postfix func <<(view: UIView) -> Maker {
     let maker = Maker(element: .view(view))
     maker.newRect = view.frame
     return maker
@@ -34,7 +30,7 @@ public postfix func << (view: UIView) -> Maker {
 ///
 /// - returns: `Maker` instance for chaining relations.
 
-public postfix func << (layer: CALayer) -> Maker {
+public postfix func <<(layer: CALayer) -> Maker {
     let maker = Maker(element: .layer(layer))
     maker.newRect = layer.frame
     return maker
@@ -42,7 +38,7 @@ public postfix func << (layer: CALayer) -> Maker {
 
 /// End frame configuration.
 
-public postfix func >> (maker: Maker) {
+public postfix func >>(maker: Maker) {
     maker.configureFrame()
 }
 

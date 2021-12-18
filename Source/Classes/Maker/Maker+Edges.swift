@@ -1,5 +1,5 @@
 //
-//  Copyright © 2020 Rosberry. All rights reserved.
+//  Copyright © 2021 chinaxxren. All rights reserved.
 //
 
 import UIKit
@@ -42,24 +42,24 @@ extension Maker {
         sides.forEach { side in
             switch side {
             case .bottom:
-                bottom(inset: insets.bottom)
+                bottom(insets.bottom)
             case .left:
-                left(inset: insets.left)
+                left(insets.left)
             case .right:
-                right(inset: insets.right)
+                right(insets.right)
             case .top:
-                top(inset: insets.top)
+                top(insets.top)
             case .horizontal:
-                right(inset: insets.right)
-                left(inset: insets.left)
+                right(insets.right)
+                left(insets.left)
             case .vertical:
-                top(inset: insets.top)
-                bottom(inset: insets.bottom)
+                top(insets.top)
+                bottom(insets.bottom)
             case .all:
-                right(inset: insets.right)
-                left(inset: insets.left)
-                top(inset: insets.top)
-                bottom(inset: insets.bottom)
+                right(insets.right)
+                left(insets.left)
+                top(insets.top)
+                bottom(insets.bottom)
             default:
                 return
             }

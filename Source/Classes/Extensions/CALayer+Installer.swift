@@ -1,5 +1,5 @@
 //
-//  Copyright © 2020 Rosberry. All rights reserved.
+//  Copyright © 2021 chinaxxren. All rights reserved.
 //
 
 import UIKit
@@ -67,7 +67,7 @@ public extension Collection where Iterator.Element: CALayer {
 
             case let .horizontal(lInset, rInset):
                 container.makeFrame { maker in
-                    maker.left(inset: lInset).right(inset: rInset)
+                    maker.left(lInset).right(rInset)
                 }
                 let width = container.frame.width
                 container.frame = .zero
@@ -76,7 +76,7 @@ public extension Collection where Iterator.Element: CALayer {
 
             case let .vertical(tInset, bInset):
                 container.makeFrame { maker in
-                    maker.top(inset: tInset).bottom(inset: bInset)
+                    maker.top(tInset).bottom(bInset)
                 }
                 let height = container.frame.height
                 container.frame = .zero
@@ -128,8 +128,7 @@ public extension Collection where Iterator.Element: CALayer {
         let container: CALayer
         if let superLayer = first?.superlayer {
             container = superLayer
-        }
-        else {
+        } else {
             container = CALayer()
         }
 

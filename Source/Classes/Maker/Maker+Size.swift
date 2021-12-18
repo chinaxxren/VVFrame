@@ -1,5 +1,5 @@
 //
-//  Copyright © 2020 Rosberry. All rights reserved.
+//  Copyright © 2021 chinaxxren. All rights reserved.
 //
 
 import UIKit
@@ -40,16 +40,13 @@ extension Maker {
             if element != self.element {
                 let width = self.relationSize(element: element, for: relationType) * multiplier.value
                 self.newRect.setValue(width, for: .width)
-            }
-            else {
+            } else {
                 if let parameter = self.heightParameter {
                     self.newRect.setValue(parameter.value * multiplier.value, for: .width)
-                }
-                else if let parameter = self.heightToParameter {
+                } else if let parameter = self.heightToParameter {
                     let width = self.relationSize(element: parameter.element, for: parameter.relationType) * (parameter.value * multiplier.value)
                     self.newRect.setValue(width, for: .width)
-                }
-                else {
+                } else {
                     guard let topParameter = self.topParameter, let bottomParameter = self.bottomParameter else {
                         return
                     }
@@ -99,16 +96,13 @@ extension Maker {
             if element != self.element {
                 let height = self.relationSize(element: element, for: relationType) * multiplier.value
                 self.newRect.setValue(height, for: .height)
-            }
-            else {
+            } else {
                 if let parameter = self.widthParameter {
                     self.newRect.setValue(parameter.value * multiplier.value, for: .height)
-                }
-                else if let parameter = self.widthToParameter {
+                } else if let parameter = self.widthToParameter {
                     let height = self.relationSize(element: parameter.element, for: parameter.relationType) * (parameter.value * multiplier.value)
                     self.newRect.setValue(height, for: .height)
-                }
-                else {
+                } else {
                     guard let leftParameter = self.leftParameter, let rightParameter = self.rightParameter else {
                         return
                     }
@@ -131,7 +125,7 @@ extension Maker {
     /// - parameter height: The height for instance.
     ///
     /// - returns: `Maker` instance for chaining relations.
-    @discardableResult public func size(width: Number, height: Number) -> Self {
+    @discardableResult public func size(_ width: Number, _ height: Number) -> Self {
         return self.width(width).height(height)
     }
 
@@ -141,6 +135,6 @@ extension Maker {
     ///
     /// - returns: `Maker` instance for chaining relations.
     @discardableResult public func size(_ size: CGSize) -> Self {
-        return self.size(width: size.width, height: size.height)
+        return self.size(size.width, size.height)
     }
 }

@@ -1,9 +1,5 @@
 //
-//  Array+Stack.swift
-//  Framezilla
-//
-//  Created by Nikita Ermolenko on 19/02/2017.
-//
+//  Copyright © 2021 chinaxxren. All rights reserved.
 //
 
 import UIKit
@@ -50,12 +46,11 @@ public extension Collection where Iterator.Element: UIView, Self.Index == Int {
 
             for (index, view) in self.enumerated() {
                 view.makeFrame { maker in
-                    maker.size(width: width, height: height)
+                    maker.size(width, height)
                     if index == 0 {
                         maker.left()
-                    }
-                    else {
-                        maker.left(to: prevView.vv_right, inset: spacing)
+                    } else {
+                        maker.left(prevView.vv_right, spacing)
                     }
                 }
                 prevView = view
@@ -66,12 +61,11 @@ public extension Collection where Iterator.Element: UIView, Self.Index == Int {
 
             for (index, view) in self.enumerated() {
                 view.makeFrame { maker in
-                    maker.size(width: width, height: height)
+                    maker.size(width, height)
                     if index == 0 {
                         maker.top()
-                    }
-                    else {
-                        maker.top(to: prevView.vv_bottom, inset: spacing)
+                    } else {
+                        maker.top(prevView.vv_bottom, spacing)
                     }
                 }
                 prevView = view

@@ -1,5 +1,5 @@
 //
-//  Copyright © 2020 Rosberry. All rights reserved.
+//  Copyright © 2021 chinaxxren. All rights reserved.
 //
 
 import UIKit
@@ -31,10 +31,10 @@ extension Maker {
         let leftView = RelationView<HorizontalRelation>(element: element, relation: .left)
         let bottomView = RelationView<VerticalRelation>(element: element, relation: .bottom)
         let rightView = RelationView<HorizontalRelation>(element: element, relation: .right)
-        
-        return top(to: topView, inset: insets.top)
-            .left(to: leftView, inset: insets.left)
-            .bottom(to: bottomView, inset: insets.bottom)
-            .right(to: rightView, inset: insets.right)
+
+        return top(topView, insets.top)
+                .left(leftView, insets.left)
+                .bottom(bottomView, insets.bottom)
+                .right(rightView, insets.right)
     }
 }

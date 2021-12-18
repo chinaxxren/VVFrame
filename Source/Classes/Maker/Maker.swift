@@ -1,9 +1,5 @@
 //
-//  Maker.swift
-//  Framezilla
-//
-//  Created by Nikita on 26/08/16.
-//  Copyright © 2016 Nikita. All rights reserved.
+//  Copyright © 2021 chinaxxren. All rights reserved.
 //
 
 import Foundation
@@ -24,7 +20,7 @@ enum HandlerPriority: Int {
 
 public struct Sides: OptionSet {
     public let rawValue: Int
-    
+
     public static let top: Sides = .init(rawValue: 1 << 0)
     public static let bottom: Sides = .init(rawValue: 1 << 1)
     public static let left: Sides = .init(rawValue: 1 << 2)
@@ -34,7 +30,7 @@ public struct Sides: OptionSet {
     public static let horizontal: Sides = [.left, .right]
 
     public static let all: Sides = [.vertical, .horizontal]
-    
+
     public init(rawValue: Int) {
         self.rawValue = rawValue
     }
@@ -162,8 +158,7 @@ public class Maker {
         let handler = { [unowned self] in
             if case Size.width = type {
                 self.element.cornerRadius = self.newRect.width / 2
-            }
-            else {
+            } else {
                 self.element.cornerRadius = self.newRect.height / 2
             }
         }

@@ -1,8 +1,5 @@
 //
-//  Maker+Unavailable.swift
-//  Framezilla iOS
-//
-//  Created by Nikita Ermolenko on 27/02/2018.
+//  Copyright © 2021 chinaxxren. All rights reserved.
 //
 
 import Foundation

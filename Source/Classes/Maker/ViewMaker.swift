@@ -1,5 +1,5 @@
 //
-//  Copyright © 2020 Rosberry. All rights reserved.
+//  Copyright © 2021 chinaxxren. All rights reserved.
 //
 
 import UIKit
@@ -64,17 +64,14 @@ public final class ViewMaker: Maker {
 
             if let parameter = self.widthParameter {
                 fitWidth = parameter.value
-            }
-            else if let parameter = self.widthToParameter {
+            } else if let parameter = self.widthToParameter {
                 fitWidth = self.relationSize(element: parameter.element, for: parameter.relationType) * parameter.value
-            }
-            else if let leftParameter = self.leftParameter, let rightParameter = self.rightParameter {
+            } else if let leftParameter = self.leftParameter, let rightParameter = self.rightParameter {
                 let leftViewX = self.convertedValue(for: leftParameter.relationType, with: leftParameter.element) + leftParameter.value
                 let rightViewX = self.convertedValue(for: rightParameter.relationType, with: rightParameter.element) - rightParameter.value
 
                 fitWidth = rightViewX - leftViewX
-            }
-            else {
+            } else {
                 fitWidth = .greatestFiniteMagnitude
             }
 
@@ -103,17 +100,14 @@ public final class ViewMaker: Maker {
 
             if let parameter = self.heightParameter {
                 fitHeight = parameter.value
-            }
-            else if let parameter = self.heightToParameter {
+            } else if let parameter = self.heightToParameter {
                 fitHeight = self.relationSize(element: parameter.element, for: parameter.relationType) * parameter.value
-            }
-            else if let topParameter = self.topParameter, let bottomParameter = self.bottomParameter {
+            } else if let topParameter = self.topParameter, let bottomParameter = self.bottomParameter {
                 let topViewY = self.convertedValue(for: topParameter.relationType, with: topParameter.element) + topParameter.value
                 let bottomViewY = self.convertedValue(for: bottomParameter.relationType, with: bottomParameter.element) - bottomParameter.value
 
                 fitHeight = bottomViewY - topViewY
-            }
-            else {
+            } else {
                 fitHeight = .greatestFiniteMagnitude
             }
 
@@ -143,10 +137,9 @@ public final class ViewMaker: Maker {
                 assertionFailure("Can not configure a right relation to the safe area without superview.")
                 return self
             }
-            right(inset: superelement.safeAreaInsets.right + inset.value)
-        }
-        else {
-            right(inset: inset)
+            right(superelement.safeAreaInsets.right + inset.value)
+        } else {
+            right(inset)
         }
         return self
     }
@@ -169,10 +162,9 @@ public final class ViewMaker: Maker {
                 assertionFailure("Can not configure a left relation to the safe area without superview.")
                 return self
             }
-            return left(inset: superelement.safeAreaInsets.left + inset.value)
-        }
-        else {
-            return left(inset: inset)
+            return left(superelement.safeAreaInsets.left + inset.value)
+        } else {
+            return left(inset)
         }
     }
 
@@ -194,10 +186,9 @@ public final class ViewMaker: Maker {
                 assertionFailure("Can not configure a top relation to the safe area without superview.")
                 return self
             }
-            return top(inset: superelement.safeAreaInsets.top + inset.value)
-        }
-        else {
-            return top(inset: inset)
+            return top(superelement.safeAreaInsets.top + inset.value)
+        } else {
+            return top(inset)
         }
     }
 
@@ -219,10 +210,9 @@ public final class ViewMaker: Maker {
                 assertionFailure("Can not configure a bottom relation to the safe area without superview.")
                 return self
             }
-            return bottom(inset: superelement.safeAreaInsets.bottom + inset.value)
-        }
-        else {
-            return bottom(inset: inset)
+            return bottom(superelement.safeAreaInsets.bottom + inset.value)
+        } else {
+            return bottom(inset)
         }
     }
 }

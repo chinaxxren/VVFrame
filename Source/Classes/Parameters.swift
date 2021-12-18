@@ -1,9 +1,5 @@
 //
-//  Parameters.swift
-//  Framezilla
-//
-//  Created by Nikita Ermolenko on 30/06/2017.
-//
+//  Copyright © 2021 chinaxxren. All rights reserved.
 //
 
 import Foundation

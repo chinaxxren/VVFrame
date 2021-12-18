@@ -1,5 +1,5 @@
 //
-//  Copyright © 2020 Rosberry. All rights reserved.
+//  Copyright © 2021 chinaxxren. All rights reserved.
 //
 
 import UIKit
@@ -39,8 +39,7 @@ public extension Maker {
     private func convertedValue<Relation>(for relation: RelationView<Relation>) -> CGFloat {
         if relation.relationType.isSizeType {
             return relationSize(element: relation.element, for: relation.relationType)
-        }
-        else {
+        } else {
             return convertedValue(for: relation.relationType, with: relation.element)
         }
     }

@@ -1,20 +1,23 @@
 //
-//  Copyright © 2019 Rosberry. All rights reserved.
+//  Copyright © 2021 chinaxxren. All rights reserved.
 //
 
 import UIKit
 
 /// Phantom type for `vv_left`, `vv_right`, `vv_centerX` relations.
 
-public protocol HorizontalRelation {}
+public protocol HorizontalRelation {
+}
 
 /// Phantom type for `vv_top`, `vv_bottom`, `vv_centerY` relations.
 
-public protocol VerticalRelation {}
+public protocol VerticalRelation {
+}
 
 /// Phantom type for `vv_height`, `vv_width` relations.
 
-public protocol SizeRelation {}
+public protocol SizeRelation {
+}
 
 public final class RelationView<Relation> {
 

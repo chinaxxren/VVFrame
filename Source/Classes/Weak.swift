@@ -1,5 +1,5 @@
 //
-//  Copyright © 2019 Rosberry. All rights reserved.
+//  Copyright © 2021 chinaxxren. All rights reserved.
 //
 
 protocol Weak: AnyObject {
@@ -9,6 +9,7 @@ protocol Weak: AnyObject {
 
 final class WeakRef<T: AnyObject>: Weak {
     private(set) weak var object: T?
+
     init(object: T) {
         self.object = object
     }

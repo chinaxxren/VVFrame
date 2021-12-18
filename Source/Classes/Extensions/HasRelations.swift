@@ -1,9 +1,5 @@
 //
-//  UIView+Relations.swift
-//  Framezilla
-//
-//  Created by Nikita on 26/08/16.
-//  Copyright © 2016 Nikita. All rights reserved.
+//  Copyright © 2021 chinaxxren. All rights reserved.
 //
 
 import UIKit
@@ -33,6 +29,7 @@ extension CALayer: HasElement, HasRelations {
         .layer(self)
     }
 }
+
 extension HasRelations where Self: HasElement {
 
     /// Width relation of current instance.
