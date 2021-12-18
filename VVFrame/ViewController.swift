@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import VVFrame
 
 class ViewController: UIViewController {
     // MARK: - Subviews
@@ -15,6 +16,7 @@ class ViewController: UIViewController {
         view.adjustsFontSizeToFitWidth = true
         view.text =  "aaaa"
         view.numberOfLines = 0
+        view.backgroundColor = .red
         return view
     }()
     
@@ -33,6 +35,7 @@ class ViewController: UIViewController {
 
         descriptionLabel.makeFrame { maker in
             maker.left(inset: 16).right(inset: 16).top(to: view.vv_safeArea.top, inset: 30).height(50)
+//            maker.left(16).right(16).top(50).height(50);
         }
     }
 }

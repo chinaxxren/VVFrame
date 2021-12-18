@@ -14,19 +14,6 @@
 		82373E3C276C9529002E061E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82373E3A276C9529002E061E /* Main.storyboard */; };
 		82373E3E276C952A002E061E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82373E3D276C952A002E061E /* Assets.xcassets */; };
 		82373E41276C952A002E061E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82373E3F276C952A002E061E /* LaunchScreen.storyboard */; };
-		82373E8B276C9588002E061E /* FeatureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82373E7B276C9588002E061E /* FeatureViewController.swift */; };
-		82373E8C276C9588002E061E /* SideRelationFeatureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82373E7D276C9588002E061E /* SideRelationFeatureView.swift */; };
-		82373E8D276C9588002E061E /* ArcCenterFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82373E7E276C9588002E061E /* ArcCenterFeature.swift */; };
-		82373E8E276C9588002E061E /* EdgesFeatureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82373E7F276C9588002E061E /* EdgesFeatureView.swift */; };
-		82373E8F276C9588002E061E /* StackFeatureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82373E80276C9588002E061E /* StackFeatureView.swift */; };
-		82373E90276C9588002E061E /* MinMaxFeatureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82373E81276C9588002E061E /* MinMaxFeatureView.swift */; };
-		82373E91276C9588002E061E /* SafeAreaFeatureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82373E82276C9588002E061E /* SafeAreaFeatureView.swift */; };
-		82373E92276C9588002E061E /* SizeFeatureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82373E83276C9588002E061E /* SizeFeatureView.swift */; };
-		82373E93276C9588002E061E /* Feature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82373E85276C9588002E061E /* Feature.swift */; };
-		82373E94276C9588002E061E /* FeatureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82373E86276C9588002E061E /* FeatureView.swift */; };
-		82373E95276C9588002E061E /* SliderFeatureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82373E87276C9588002E061E /* SliderFeatureView.swift */; };
-		82373E96276C9588002E061E /* KeyboardFeatureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82373E88276C9588002E061E /* KeyboardFeatureView.swift */; };
-		82373E97276C9588002E061E /* ExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82373E89276C9588002E061E /* ExampleViewController.swift */; };
 		82373EC2276C9C3E002E061E /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 82373EC1276C9C3E002E061E /* Podfile */; };
 /* End PBXBuildFile section */
 
@@ -42,19 +29,6 @@
 		82373E3D276C952A002E061E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		82373E40276C952A002E061E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		82373E42276C952A002E061E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		82373E7B276C9588002E061E /* FeatureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeatureViewController.swift; sourceTree = "<group>"; };
-		82373E7D276C9588002E061E /* SideRelationFeatureView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideRelationFeatureView.swift; sourceTree = "<group>"; };
-		82373E7E276C9588002E061E /* ArcCenterFeature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArcCenterFeature.swift; sourceTree = "<group>"; };
-		82373E7F276C9588002E061E /* EdgesFeatureView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EdgesFeatureView.swift; sourceTree = "<group>"; };
-		82373E80276C9588002E061E /* StackFeatureView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StackFeatureView.swift; sourceTree = "<group>"; };
-		82373E81276C9588002E061E /* MinMaxFeatureView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MinMaxFeatureView.swift; sourceTree = "<group>"; };
-		82373E82276C9588002E061E /* SafeAreaFeatureView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SafeAreaFeatureView.swift; sourceTree = "<group>"; };
-		82373E83276C9588002E061E /* SizeFeatureView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SizeFeatureView.swift; sourceTree = "<group>"; };
-		82373E85276C9588002E061E /* Feature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Feature.swift; sourceTree = "<group>"; };
-		82373E86276C9588002E061E /* FeatureView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeatureView.swift; sourceTree = "<group>"; };
-		82373E87276C9588002E061E /* SliderFeatureView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SliderFeatureView.swift; sourceTree = "<group>"; };
-		82373E88276C9588002E061E /* KeyboardFeatureView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardFeatureView.swift; sourceTree = "<group>"; };
-		82373E89276C9588002E061E /* ExampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleViewController.swift; sourceTree = "<group>"; };
 		82373EC1276C9C3E002E061E /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A28583F39C8E6C30496D7A83 /* Pods-VVFrame.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VVFrame.release.xcconfig"; path = "Target Support Files/Pods-VVFrame/Pods-VVFrame.release.xcconfig"; sourceTree = "<group>"; };
 		C6E09512C3B27018661B458D /* Pods-VVFrame.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VVFrame.debug.xcconfig"; path = "Target Support Files/Pods-VVFrame/Pods-VVFrame.debug.xcconfig"; sourceTree = "<group>"; };
@@ -102,11 +76,8 @@
 		82373E33276C9529002E061E /* VVFrame */ = {
 			isa = PBXGroup;
 			children = (
-				82373E7C276C9588002E061E /* Features */,
 				82373E34276C9529002E061E /* AppDelegate.swift */,
 				82373E36276C9529002E061E /* SceneDelegate.swift */,
-				82373E7B276C9588002E061E /* FeatureViewController.swift */,
-				82373E89276C9588002E061E /* ExampleViewController.swift */,
 				82373E38276C9529002E061E /* ViewController.swift */,
 				82373E3A276C9529002E061E /* Main.storyboard */,
 				82373E3D276C952A002E061E /* Assets.xcassets */,
@@ -114,32 +85,6 @@
 				82373E42276C952A002E061E /* Info.plist */,
 			);
 			path = VVFrame;
-			sourceTree = "<group>";
-		};
-		82373E7C276C9588002E061E /* Features */ = {
-			isa = PBXGroup;
-			children = (
-				82373E7D276C9588002E061E /* SideRelationFeatureView.swift */,
-				82373E7E276C9588002E061E /* ArcCenterFeature.swift */,
-				82373E7F276C9588002E061E /* EdgesFeatureView.swift */,
-				82373E80276C9588002E061E /* StackFeatureView.swift */,
-				82373E81276C9588002E061E /* MinMaxFeatureView.swift */,
-				82373E82276C9588002E061E /* SafeAreaFeatureView.swift */,
-				82373E83276C9588002E061E /* SizeFeatureView.swift */,
-				82373E84276C9588002E061E /* Base */,
-				82373E88276C9588002E061E /* KeyboardFeatureView.swift */,
-			);
-			path = Features;
-			sourceTree = "<group>";
-		};
-		82373E84276C9588002E061E /* Base */ = {
-			isa = PBXGroup;
-			children = (
-				82373E85276C9588002E061E /* Feature.swift */,
-				82373E86276C9588002E061E /* FeatureView.swift */,
-				82373E87276C9588002E061E /* SliderFeatureView.swift */,
-			);
-			path = Base;
 			sourceTree = "<group>";
 		};
 		E41DFBE212E279FEA3DA9A7A /* Pods */ = {
@@ -269,21 +214,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				82373E8B276C9588002E061E /* FeatureViewController.swift in Sources */,
-				82373E95276C9588002E061E /* SliderFeatureView.swift in Sources */,
-				82373E8E276C9588002E061E /* EdgesFeatureView.swift in Sources */,
-				82373E8C276C9588002E061E /* SideRelationFeatureView.swift in Sources */,
-				82373E97276C9588002E061E /* ExampleViewController.swift in Sources */,
-				82373E91276C9588002E061E /* SafeAreaFeatureView.swift in Sources */,
-				82373E8D276C9588002E061E /* ArcCenterFeature.swift in Sources */,
-				82373E8F276C9588002E061E /* StackFeatureView.swift in Sources */,
-				82373E96276C9588002E061E /* KeyboardFeatureView.swift in Sources */,
-				82373E92276C9588002E061E /* SizeFeatureView.swift in Sources */,
-				82373E93276C9588002E061E /* Feature.swift in Sources */,
-				82373E90276C9588002E061E /* MinMaxFeatureView.swift in Sources */,
 				82373E39276C9529002E061E /* ViewController.swift in Sources */,
 				82373E35276C9529002E061E /* AppDelegate.swift in Sources */,
-				82373E94276C9588002E061E /* FeatureView.swift in Sources */,
 				82373E37276C9529002E061E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
