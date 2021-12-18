@@ -65,8 +65,8 @@ extension RelationType {
 public enum ContainerRelation {
     case width(Number)
     case height(Number)
-    case horizontal(left: Number, right: Number)
-    case vertical(top: Number, bottom: Number)
+    case horizontal(_ left: Number,_ right: Number)
+    case vertical(_ top: Number,_ bottom: Number)
 }
 
 public class EdgeRelationCollection {

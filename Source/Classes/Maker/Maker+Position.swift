@@ -91,7 +91,7 @@ extension Maker {
     /// - returns: `Maker` instance for chaining relations.
     @discardableResult public func margin(_ inset: Number) -> Self {
         let inset = inset.value
-        return edges(insets: UIEdgeInsets(top: inset, left: inset, bottom: inset, right: inset))
+        return edges(UIEdgeInsets(top: inset, left: inset, bottom: inset, right: inset))
     }
 
     /// Creates bottom relation to super instance.

@@ -36,7 +36,6 @@
 		E49C5A2E22245A1F5CE1C5BC415108E6 /* SafeArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F704CD1E8FFA4DA52B1A30AE248345 /* SafeArea.swift */; };
 		E854729B61ED35935575033167222483 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		E91FCC4FD17B72FA94DC40B5F306962D /* Maker+Configurations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD5C7D6FB6AE35F475DDDAC7224D003 /* Maker+Configurations.swift */; };
-		F88D7BC90D6219AD7F08FCFDFBAB7543 /* Maker+Unavailable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD476B90CC6C7F547F872C82C8B33823 /* Maker+Unavailable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,7 +83,6 @@
 		B3E0FDE08006354A6365CE9FE8418536 /* Pods-VVFrameDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VVFrameDemo-frameworks.sh"; sourceTree = "<group>"; };
 		B56DE06488488FFF124C8CBD0DBA92AB /* Number.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Number.swift; path = Source/Classes/Number.swift; sourceTree = "<group>"; };
 		B7C90CD73177EC88EDF98CAAC2D6F482 /* Weak.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Weak.swift; path = Source/Classes/Weak.swift; sourceTree = "<group>"; };
-		BD476B90CC6C7F547F872C82C8B33823 /* Maker+Unavailable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Maker+Unavailable.swift"; sourceTree = "<group>"; };
 		C0C1A234ABAAEDB043AC0E922DC341F3 /* Maker+Position.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Maker+Position.swift"; sourceTree = "<group>"; };
 		C1AEDE7F85C8D7890548E61A28FE90F2 /* VVFrame.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = VVFrame.debug.xcconfig; sourceTree = "<group>"; };
 		CF6AEA9507C7D7CF4E238AE7861E821E /* Pods-VVFrameDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-VVFrameDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -237,7 +235,6 @@
 				ACFA078CBD38C4861A823BF01EF00172 /* CALayer+Installer.swift */,
 				7E653E53C980BD663A7BB3CD121EDB1F /* HasRelations.swift */,
 				7BD5C7D6FB6AE35F475DDDAC7224D003 /* Maker+Configurations.swift */,
-				BD476B90CC6C7F547F872C82C8B33823 /* Maker+Unavailable.swift */,
 				6EBED5F6E379BFB64CCB3E4450D8A81B /* OptionSet+ForEeach.swift */,
 				9F3D18C5FC16593E7FF0A29B5AA10460 /* UIView+Installer.swift */,
 				A1F383E0ED6C961A97BA5033FC9018F8 /* UIView+Keyboard.swift */,
@@ -393,7 +390,6 @@
 				566F9778A2254F272B2755C31B7E7892 /* Maker+Position.swift in Sources */,
 				6A4AC2AF3A3926A2EB1389A8A73F7FB8 /* Maker+Relations.swift in Sources */,
 				97C4D0218B454BD9B25AE73361C2F4A3 /* Maker+Size.swift in Sources */,
-				F88D7BC90D6219AD7F08FCFDFBAB7543 /* Maker+Unavailable.swift in Sources */,
 				5E765B390CEAD7EB4F719FE9C4324C4C /* MakerHelper.swift in Sources */,
 				12AF387C4A0525E906DE5BBFC32A0387 /* Number.swift in Sources */,
 				49F158D0B760B66CAE5F858A228E7F01 /* OptionSet+ForEeach.swift in Sources */,

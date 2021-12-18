@@ -22,18 +22,26 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.dataList.append("Multiplier")
+        dataList.append("Multiplier")
+        dataList.append("Edge")
+        dataList.append("Relations")
+        dataList.append("SafeArea")
+        dataList.append("Center")
+        dataList.append("TextSize")
+        dataList.append("Relation")
+        dataList.append("Container")
+        dataList.append("Stack")
         
         view.addSubview(tableView)
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        self.dataList.count
+        dataList.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        cell.textLabel?.text = self.dataList[indexPath.row]
+        cell.textLabel?.text = dataList[indexPath.row]
         return cell
     }
     
@@ -41,6 +49,22 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         var controller:UIViewController;
         if indexPath.row == 0 {
             controller = MultiplierController()
+        } else if(indexPath.row == 1){
+            controller = EdgeController()
+        } else if(indexPath.row == 2){
+            controller = RelationsController()
+        } else if(indexPath.row == 3){
+            controller = SafeAreaController()
+        } else if(indexPath.row == 4){
+            controller = CenterController()
+        } else if(indexPath.row == 5){
+            controller = TextSizeController()
+        } else if(indexPath.row == 6){
+            controller = RelationController()
+        } else if(indexPath.row == 7){
+            controller = ContainerController()
+        } else if(indexPath.row == 8){
+            controller = StackController()
         } else {
             controller = UIViewController()
         }

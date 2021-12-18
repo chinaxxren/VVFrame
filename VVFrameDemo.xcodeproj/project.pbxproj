@@ -15,6 +15,14 @@
 		82373E41276C952A002E061E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82373E3F276C952A002E061E /* LaunchScreen.storyboard */; };
 		82373EC2276C9C3E002E061E /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 82373EC1276C9C3E002E061E /* Podfile */; };
 		825E2E60276DD6FA00137242 /* MultiplierController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825E2E5F276DD6FA00137242 /* MultiplierController.swift */; };
+		825E2E63276DDE3A00137242 /* EdgeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825E2E62276DDE3A00137242 /* EdgeController.swift */; };
+		825E2E65276DE4AB00137242 /* RelationsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825E2E64276DE4AB00137242 /* RelationsController.swift */; };
+		825E2E67276DE5A000137242 /* SafeAreaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825E2E66276DE5A000137242 /* SafeAreaController.swift */; };
+		825E2E69276E4E1800137242 /* CenterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825E2E68276E4E1800137242 /* CenterController.swift */; };
+		825E2E6B276E4FB900137242 /* TextSizeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825E2E6A276E4FB900137242 /* TextSizeController.swift */; };
+		825E2E6D276E575B00137242 /* RelationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825E2E6C276E575B00137242 /* RelationController.swift */; };
+		825E2E6F276E5A2600137242 /* ContainerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825E2E6E276E5A2600137242 /* ContainerController.swift */; };
+		825E2E71276E5C4700137242 /* StackController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825E2E70276E5C4700137242 /* StackController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +38,14 @@
 		82373E42276C952A002E061E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		82373EC1276C9C3E002E061E /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		825E2E5F276DD6FA00137242 /* MultiplierController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiplierController.swift; sourceTree = "<group>"; };
+		825E2E62276DDE3A00137242 /* EdgeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdgeController.swift; sourceTree = "<group>"; };
+		825E2E64276DE4AB00137242 /* RelationsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelationsController.swift; sourceTree = "<group>"; };
+		825E2E66276DE5A000137242 /* SafeAreaController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafeAreaController.swift; sourceTree = "<group>"; };
+		825E2E68276E4E1800137242 /* CenterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterController.swift; sourceTree = "<group>"; };
+		825E2E6A276E4FB900137242 /* TextSizeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextSizeController.swift; sourceTree = "<group>"; };
+		825E2E6C276E575B00137242 /* RelationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelationController.swift; sourceTree = "<group>"; };
+		825E2E6E276E5A2600137242 /* ContainerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerController.swift; sourceTree = "<group>"; };
+		825E2E70276E5C4700137242 /* StackController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackController.swift; sourceTree = "<group>"; };
 		A28583F39C8E6C30496D7A83 /* Pods-VVFrame.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VVFrame.release.xcconfig"; path = "Target Support Files/Pods-VVFrame/Pods-VVFrame.release.xcconfig"; sourceTree = "<group>"; };
 		C6E09512C3B27018661B458D /* Pods-VVFrame.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VVFrame.debug.xcconfig"; path = "Target Support Files/Pods-VVFrame/Pods-VVFrame.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -76,15 +92,31 @@
 		82373E33276C9529002E061E /* VVFrame */ = {
 			isa = PBXGroup;
 			children = (
+				825E2E61276DDBF400137242 /* Demo */,
 				82373E34276C9529002E061E /* AppDelegate.swift */,
 				82373E36276C9529002E061E /* SceneDelegate.swift */,
 				82373E38276C9529002E061E /* ViewController.swift */,
 				82373E3D276C952A002E061E /* Assets.xcassets */,
 				82373E3F276C952A002E061E /* LaunchScreen.storyboard */,
 				82373E42276C952A002E061E /* Info.plist */,
-				825E2E5F276DD6FA00137242 /* MultiplierController.swift */,
 			);
 			path = VVFrame;
+			sourceTree = "<group>";
+		};
+		825E2E61276DDBF400137242 /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				825E2E5F276DD6FA00137242 /* MultiplierController.swift */,
+				825E2E62276DDE3A00137242 /* EdgeController.swift */,
+				825E2E64276DE4AB00137242 /* RelationsController.swift */,
+				825E2E66276DE5A000137242 /* SafeAreaController.swift */,
+				825E2E68276E4E1800137242 /* CenterController.swift */,
+				825E2E6A276E4FB900137242 /* TextSizeController.swift */,
+				825E2E6C276E575B00137242 /* RelationController.swift */,
+				825E2E6E276E5A2600137242 /* ContainerController.swift */,
+				825E2E70276E5C4700137242 /* StackController.swift */,
+			);
+			path = Demo;
 			sourceTree = "<group>";
 		};
 		E41DFBE212E279FEA3DA9A7A /* Pods */ = {
@@ -213,10 +245,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				825E2E67276DE5A000137242 /* SafeAreaController.swift in Sources */,
 				825E2E60276DD6FA00137242 /* MultiplierController.swift in Sources */,
 				82373E39276C9529002E061E /* ViewController.swift in Sources */,
 				82373E35276C9529002E061E /* AppDelegate.swift in Sources */,
 				82373E37276C9529002E061E /* SceneDelegate.swift in Sources */,
+				825E2E6D276E575B00137242 /* RelationController.swift in Sources */,
+				825E2E71276E5C4700137242 /* StackController.swift in Sources */,
+				825E2E63276DDE3A00137242 /* EdgeController.swift in Sources */,
+				825E2E69276E4E1800137242 /* CenterController.swift in Sources */,
+				825E2E65276DE4AB00137242 /* RelationsController.swift in Sources */,
+				825E2E6F276E5A2600137242 /* ContainerController.swift in Sources */,
+				825E2E6B276E4FB900137242 /* TextSizeController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

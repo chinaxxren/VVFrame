@@ -38,7 +38,7 @@ extension Maker {
     /// - parameter sides: The sides which will inculed from edge insets to setting relations.
     ///
     /// - returns: `Maker` instance for chaining relations.
-    @discardableResult public func edges(insets: UIEdgeInsets, sides: Sides = .all) -> Self {
+    @discardableResult public func edges(_ insets: UIEdgeInsets,_ sides: Sides = .all) -> Self {
         sides.forEach { side in
             switch side {
             case .bottom:
