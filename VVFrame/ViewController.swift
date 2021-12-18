@@ -5,34 +5,47 @@
 import UIKit
 import VVFrame
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
+    var dataList = [String]()
+    
     // MARK: - Subviews
 
-    private lazy var descriptionLabel: UILabel = {
-        let view = UILabel()
-        view.adjustsFontSizeToFitWidth = true
-        view.text = "aaaa"
-        view.numberOfLines = 0
-        view.backgroundColor = .red
-        return view
+    private lazy var tableView: UITableView = {
+        let tableView = UITableView(frame: self.view.bounds, style: .plain)
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        tableView.delegate = self
+        tableView.dataSource = self
+        return tableView
     }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        if #available(iOS 13.0, *) {
-            view.backgroundColor = .systemBackground
-        } else {
-            view.backgroundColor = .white
-        }
-        view.addSubview(descriptionLabel)
+
+        self.dataList.append("Multiplier")
+        
+        view.addSubview(tableView)
     }
 
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
-
-        descriptionLabel.makeFrame { maker in
-            maker.left(16).right(16).top(view.vv_safeArea.top, 30).height(50)
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        self.dataList.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        cell.textLabel?.text = self.dataList[indexPath.row]
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        var controller:UIViewController;
+        if indexPath.row == 0 {
+            controller = MultiplierController()
+        } else {
+            controller = UIViewController()
         }
+        
+        self.navigationController?.pushViewController(controller, animated: true)
     }
 }
 
