@@ -28,12 +28,12 @@ final class ArcCenterFeature: SliderFeatureView {
     override func performLayout() {
         super.performLayout()
 
-        purpleView.configureFrame { maker in
+        purpleView.makeFrame { maker in
             let side = bounds.width / 2
             maker.center().size(width: side, height: side).cornerRadius(byHalf: .height)
         }
 
-        greenView.configureFrame { maker in
+        greenView.makeFrame { maker in
             let side = 50
             maker.center(to: purpleView, radius: purpleView.bounds.width / 2, angle: angle)
                 .size(width: side, height: side)

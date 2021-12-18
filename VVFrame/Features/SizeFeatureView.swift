@@ -52,28 +52,28 @@ final class SizeFeatureView: FeatureView {
     }
 
     override func performLayout() {
-        textField.configureFrame { maker in
+        textField.makeFrame { maker in
             guard let superview = superview else {
                 return
             }
 
-            if nui_keyboard.isVisible {
-                maker.bottom(to: nui_keyboard.top, inset: 5)
+            if vv_keyboard.isVisible {
+                maker.bottom(to: vv_keyboard.top, inset: 5)
             }
             else {
-                maker.bottom(to: superview.nui_safeArea.bottom, inset: 40)
+                maker.bottom(to: superview.vv_safeArea.bottom, inset: 40)
             }
 
             maker.left().right().heightToFit()
         }
 
-        labelContainerView.configureFrame { maker in
+        labelContainerView.makeFrame { maker in
             let sideInset: CGFloat = 16
             maker.left(inset: sideInset).right(inset: sideInset)
-                .top().bottom(to: textField.nui_top)
+                .top().bottom(to: textField.vv_top)
         }
 
-        exampleLabel.configureFrame { maker in
+        exampleLabel.makeFrame { maker in
             maker.top().centerX()
                 .sizeThatFits(size: labelContainerView.bounds.size)
         }

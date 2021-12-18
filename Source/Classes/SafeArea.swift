@@ -19,6 +19,6 @@ public final class SafeAreaRelationCollection: EdgeRelationCollection {
 
 public struct SafeArea {}
 @available(*, deprecated, message: "Use `view.safeArea.<type>` instead")
-public var nui_safeArea: SafeArea {
+public var vv_safeArea: SafeArea {
     return SafeArea()
 }

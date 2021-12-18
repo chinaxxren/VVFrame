@@ -18,11 +18,11 @@ final class SafeAreaFeatureView: SliderFeatureView {
     override func performLayout() {
         super.performLayout()
 
-        purpleView.configureFrame { maker in
+        purpleView.makeFrame { maker in
             guard let superview = superview else {
                 return
             }
-            maker.bottom(to: superview.nui_safeArea.bottom, inset: inset)
+            maker.bottom(to: superview.vv_safeArea.bottom, inset: inset)
         }
     }
 

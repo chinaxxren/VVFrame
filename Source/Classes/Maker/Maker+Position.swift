@@ -25,7 +25,7 @@ extension Maker {
     ///
     /// Use this method when you want to join left side of current view with some horizontal side of another view.
     ///
-    /// - note: You can not use this method with other relations except for `nui_left`, `nui_centerX` and `nui_right`.
+    /// - note: You can not use this method with other relations except for `vv_left`, `vv_centerX` and `vv_right`.
     ///
     /// - parameter relationView:   The view on which you set left relation.
     /// - parameter inset:          The inset for additional space between views. Default value: 0.
@@ -63,7 +63,7 @@ extension Maker {
     ///
     /// Use this method when you want to join top side of current instance with some vertical side of another instance.
     ///
-    /// - note: You can not use this method with other relations except for `nui_top`, `nui_centerY` and `nui_bottom`.
+    /// - note: You can not use this method with other relations except for `vv_top`, `vv_centerY` and `vv_bottom`.
     ///
     /// - parameter relationView:  The view on which you set top relation.
     /// - parameter inset:         The inset for additional space between views. Default value: 0.
@@ -113,7 +113,7 @@ extension Maker {
     ///
     /// Use this method when you want to join bottom side of current view with some vertical side of another view.
     ///
-    /// - note: You can not use this method with other relations except for `nui_top`, `nui_centerY` and `nui_bottom`.
+    /// - note: You can not use this method with other relations except for `vv_top`, `vv_centerY` and `vv_bottom`.
     ///
     /// - parameter relationView:   The view on which you set bottom relation.
     /// - parameter inset:          The inset for additional space between views. Default value: 0.
@@ -157,7 +157,7 @@ extension Maker {
     ///
     /// Use this method when you want to join right side of current instance with some horizontal side of another instance.
     ///
-    /// - note: You can not use this method with other relations except for `nui_left`, `nui_centerX` and `nui_right`.
+    /// - note: You can not use this method with other relations except for `vv_left`, `vv_centerX` and `vv_right`.
     ///
     /// - parameter relationView:     The view on which you set right relation.
     /// - parameter inset:            The inset for additional space between views. Default value: 0.
@@ -258,7 +258,7 @@ extension Maker {
     ///
     /// Use this method when you want to join centerY of current instance with some vertical side of another instance.
     ///
-    /// - note: You can not use this method with other relations except for `nui_top`, `nui_centerY` and `nui_bottom`.
+    /// - note: You can not use this method with other relations except for `vv_top`, `vv_centerY` and `vv_bottom`.
     ///
     /// - parameter relationView:   The view on which you set centerY relation.
     /// - parameter offset:         Additional offset for centerY point. Default value: 0.
@@ -287,7 +287,7 @@ extension Maker {
     @discardableResult public func centerY(between view1: UIView, _ view2: UIView) -> Self {
         let topView = view1.frame.maxY > view2.frame.minY ? view2 : view1
         let bottomView = topView === view1 ? view2 : view1
-        return centerY(between: topView.nui_bottom, bottomView.nui_top)
+        return centerY(between: topView.vv_bottom, bottomView.vv_top)
     }
 
     /// Creates centerY relation between two relation views.
@@ -340,7 +340,7 @@ extension Maker {
     ///
     /// Use this method when you want to join centerX of current instance with some horizontal side of another instance.
     ///
-    /// - note: You can not use this method with other relations except for `nui_left`, `nui_centerX` and `nui_right`.
+    /// - note: You can not use this method with other relations except for `vv_left`, `vv_centerX` and `vv_right`.
     ///
     /// - parameter relationView:   The view on which you set centerX relation.
     /// - parameter offset:         Additional offset for centerX point. Default value: 0.
@@ -370,7 +370,7 @@ extension Maker {
 
         let leftView = view1.frame.maxX > view2.frame.minX ? view2 : view1
         let rightView = leftView === view1 ? view2 : view1
-        return centerX(between: leftView.nui_right, rightView.nui_left)
+        return centerX(between: leftView.vv_right, rightView.vv_left)
     }
 
     /// Creates centerX relation between two relation views.

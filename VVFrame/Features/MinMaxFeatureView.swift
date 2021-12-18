@@ -21,14 +21,14 @@ final class MinMaxFeatureView: SliderFeatureView {
     override func performLayout() {
         super.performLayout()
 
-        greenView.configureFrame { maker in
+        greenView.makeFrame { maker in
             maker.left(inset: greenViewLeftInset).centerY(offset: viewSize.height / 2).size(viewSize)
         }
-        pinkView.configureFrame { maker in
+        pinkView.makeFrame { maker in
             maker.left(inset: pinkViewLeftInset).centerY(offset: -viewSize.height / 2).size(viewSize)
         }
-        purpleView.configureFrame { maker in
-            let leftRelation = maker.max(greenView.nui_right, pinkView.nui_right)
+        purpleView.makeFrame { maker in
+            let leftRelation = maker.max(greenView.vv_right, pinkView.vv_right)
             maker.left(to: leftRelation).centerY().size(viewSize)
         }
     }

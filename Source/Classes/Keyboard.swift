@@ -27,6 +27,6 @@ public class Keyboard: EdgeRelationCollection {
     }
 }
 
-public var nui_keyboard: Keyboard {
+public var vv_keyboard: Keyboard {
     return Keyboard()
 }

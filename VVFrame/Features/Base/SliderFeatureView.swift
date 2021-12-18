@@ -29,12 +29,12 @@ class SliderFeatureView: FeatureView {
     }
 
     override func performLayout() {
-        sliderView.configureFrame { maker in
+        sliderView.makeFrame { maker in
             maker.centerX().top(inset: 10).width(bounds.width - 30)
         }
 
-        sliderValueLabel.configureFrame { maker in
-            maker.centerX().top(to: sliderView.nui_bottom).sizeToFit()
+        sliderValueLabel.makeFrame { maker in
+            maker.centerX().top(to: sliderView.vv_bottom).sizeToFit()
         }
     }
 

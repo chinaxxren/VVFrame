@@ -26,7 +26,7 @@ extension Maker {
     ///
     /// Use this method when you want that your view's width equals to another view's height with some multiplier, for example.
     ///
-    /// - note: You can not use this method with other relations except for `nui_width` and `nui_height`.
+    /// - note: You can not use this method with other relations except for `vv_width` and `vv_height`.
     ///
     /// - parameter relationView:   The view on which you set relation.
     /// - parameter multiplier:     The multiplier for views relation. Default multiplier value: 1.
@@ -85,7 +85,7 @@ extension Maker {
     ///
     /// Use this method when you want that your view's height equals to another view's width with some multiplier, for example.
     ///
-    /// - note: You can not use this method with other relations except for `nui_width` and `nui_height`.
+    /// - note: You can not use this method with other relations except for `vv_width` and `vv_height`.
     ///
     /// - parameter relationView:   The view on which you set relation.
     /// - parameter multiplier:     The multiplier for views relation. Default multiplier value: 1.

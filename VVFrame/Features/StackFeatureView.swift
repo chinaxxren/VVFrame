@@ -40,14 +40,14 @@ final class StackFeatureView: FeatureView {
     }
 
     override func performLayout() {
-        addSubviewButton.configureFrame { maker in
-            maker.left().top(inset: 10).height(30).width(to: nui_width, multiplier: 0.5)
+        addSubviewButton.makeFrame { maker in
+            maker.left().top(inset: 10).height(30).width(to: vv_width, multiplier: 0.5)
         }
-        changeAxisButton.configureFrame { maker in
-            maker.right().top(inset: 10).height(30).width(to: nui_width, multiplier: 0.5)
+        changeAxisButton.makeFrame { maker in
+            maker.right().top(inset: 10).height(30).width(to: vv_width, multiplier: 0.5)
         }
-        stackView.configureFrame { maker in
-            maker.top(to: addSubviewButton.nui_bottom).left().right().bottom()
+        stackView.makeFrame { maker in
+            maker.top(to: addSubviewButton.vv_bottom).left().right().bottom()
         }
 
         stackView.subviews.stack(axis: isHorizontal ? .horizontal : .vertical)

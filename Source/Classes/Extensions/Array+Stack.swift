@@ -49,13 +49,13 @@ public extension Collection where Iterator.Element: UIView, Self.Index == Int {
             let height = superview.bounds.height
 
             for (index, view) in self.enumerated() {
-                view.configureFrame { maker in
+                view.makeFrame { maker in
                     maker.size(width: width, height: height)
                     if index == 0 {
                         maker.left()
                     }
                     else {
-                        maker.left(to: prevView.nui_right, inset: spacing)
+                        maker.left(to: prevView.vv_right, inset: spacing)
                     }
                 }
                 prevView = view
@@ -65,13 +65,13 @@ public extension Collection where Iterator.Element: UIView, Self.Index == Int {
             let height = (superview.bounds.height - (count - 1) * spacing.value) / count
 
             for (index, view) in self.enumerated() {
-                view.configureFrame { maker in
+                view.makeFrame { maker in
                     maker.size(width: width, height: height)
                     if index == 0 {
                         maker.top()
                     }
                     else {
-                        maker.top(to: prevView.nui_bottom, inset: spacing)
+                        maker.top(to: prevView.vv_bottom, inset: spacing)
                     }
                 }
                 prevView = view

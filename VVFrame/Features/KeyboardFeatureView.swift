@@ -37,28 +37,28 @@ final class KeyboardFeatureView: FeatureView {
     }
 
     override func performLayout() {
-        textField.configureFrame { maker in
-            if nui_keyboard.isVisible {
-                maker.bottom(to: nui_keyboard.top)
+        textField.makeFrame { maker in
+            if vv_keyboard.isVisible {
+                maker.bottom(to: vv_keyboard.top)
             }
             else {
-                maker.top(to: purpleView.nui_bottom)
+                maker.top(to: purpleView.vv_bottom)
             }
             maker.size(width: bounds.width - 30, height: 50).centerX()
         }
 
-        greenView.configureFrame { maker in
-            maker.left(to: textField.nui_left, inset: 16)
-                .bottom(to: textField.nui_top, inset: 16)
-                .top(to: purpleView.nui_top, inset: 16)
-                .right(to: textField.nui_centerX)
+        greenView.makeFrame { maker in
+            maker.left(to: textField.vv_left, inset: 16)
+                .bottom(to: textField.vv_top, inset: 16)
+                .top(to: purpleView.vv_top, inset: 16)
+                .right(to: textField.vv_centerX)
         }
 
-        pinkView.configureFrame { maker in
-            maker.left(to: textField.nui_centerX)
-                .bottom(to: textField.nui_top, inset: 16)
-                .top(to: purpleView.nui_top, inset: 16)
-                .right(to: textField.nui_right, inset: 16)
+        pinkView.makeFrame { maker in
+            maker.left(to: textField.vv_centerX)
+                .bottom(to: textField.vv_top, inset: 16)
+                .top(to: purpleView.vv_top, inset: 16)
+                .right(to: textField.vv_right, inset: 16)
         }
     }
 }

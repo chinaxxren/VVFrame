@@ -40,7 +40,7 @@ class FeatureView: UIView {
 
     override func layoutSubviews() {
         super.layoutSubviews()
-        purpleView.configureFrame { maker in
+        purpleView.makeFrame { maker in
             let side = bounds.width / 1.3
             maker.center().size(width: side, height: side)
         }

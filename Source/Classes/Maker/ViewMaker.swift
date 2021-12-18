@@ -131,12 +131,12 @@ public final class ViewMaker: Maker {
     ///
     /// - note: In earlier versions of OS than iOS 11, it creates a right relation to a superview.
     ///
-    /// - parameter safeArea:  The safe area of current view. Use a `nui_safeArea` - global property.
+    /// - parameter safeArea:  The safe area of current view. Use a `vv_safeArea` - global property.
     /// - parameter inset:     The inset for additional space to safe area. Default value: 0.
     ///
     /// - returns: `Maker` instance for chaining relations.
 
-    @available(*, deprecated, message: "Use `right(to: view.nui_safeArea.right, inset: ...)` instead")
+    @available(*, deprecated, message: "Use `right(to: view.vv_safeArea.right, inset: ...)` instead")
     @discardableResult public func right(to safeArea: SafeArea, inset: Number = 0.0) -> ViewMaker {
         if #available(iOS 11.0, *) {
             guard let superelement = element.superelement as? ViewType else {
@@ -157,12 +157,12 @@ public final class ViewMaker: Maker {
     ///
     /// - note: In earlier versions of OS than iOS 11, it creates a left relation to a superview.
     ///
-    /// - parameter safeArea:  The safe area of current view. Use a `nui_safeArea` - global property.
+    /// - parameter safeArea:  The safe area of current view. Use a `vv_safeArea` - global property.
     /// - parameter inset:     The inset for additional space to safe area. Default value: 0.
     ///
     /// - returns: `Maker` instance for chaining relations.
 
-    @available(*, deprecated, message: "Use `left(to: view.nui_safeArea.left, inset: ...)` instead")
+    @available(*, deprecated, message: "Use `left(to: view.vv_safeArea.left, inset: ...)` instead")
     @discardableResult public func left(to safeArea: SafeArea, inset: Number = 0.0) -> ViewMaker {
         if #available(iOS 11.0, *) {
             guard let superelement = element.superelement as? ViewType else {
@@ -182,12 +182,12 @@ public final class ViewMaker: Maker {
     ///
     /// - note: In earlier versions of OS than iOS 11, it creates a top relation to a superview.
     ///
-    /// - parameter safeArea:  The safe area of current view. Use a `nui_safeArea` - global property.
+    /// - parameter safeArea:  The safe area of current view. Use a `vv_safeArea` - global property.
     /// - parameter inset:     The inset for additional space to safe area. Default value: 0.
     ///
     /// - returns: `Maker` instance for chaining relations.
 
-    @available(*, deprecated, message: "Use `top(to: view.nui_safeArea.top, inset: ...)` instead")
+    @available(*, deprecated, message: "Use `top(to: view.vv_safeArea.top, inset: ...)` instead")
     @discardableResult public func top(to safeArea: SafeArea, inset: Number = 0.0) -> ViewMaker {
         if #available(iOS 11.0, *) {
             guard let superelement = element.superelement as? ViewType else {
@@ -207,12 +207,12 @@ public final class ViewMaker: Maker {
     ///
     /// - note: In earlier versions of OS than iOS 11, it creates a bottom relation to a superview.
     ///
-    /// - parameter safeArea:  The safe area of current view. Use a `nui_safeArea` - global property.
+    /// - parameter safeArea:  The safe area of current view. Use a `vv_safeArea` - global property.
     /// - parameter inset:     The inset for additional space to safe area. Default value: 0.
     ///
     /// - returns: `Maker` instance for chaining relations.
 
-    @available(*, deprecated, message: "Use `bottom(to: view.nui_safeArea.bottom, inset: ...)` instead")
+    @available(*, deprecated, message: "Use `bottom(to: view.vv_safeArea.bottom, inset: ...)` instead")
     @discardableResult public func bottom(to safeArea: SafeArea, inset: Number = 0.0) -> ViewMaker {
         if #available(iOS 11.0, *) {
             guard let superelement = element.superelement as? ViewType else {

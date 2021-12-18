@@ -31,8 +31,8 @@ class ViewController: UIViewController {
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
 
-        descriptionLabel.configureFrame { maker in
-            maker.left(inset: 16).right(inset: 16).top(to: view.nui_safeArea.top, inset: 30).height(50)
+        descriptionLabel.makeFrame { maker in
+            maker.left(inset: 16).right(inset: 16).top(to: view.vv_safeArea.top, inset: 30).height(50)
         }
     }
 }

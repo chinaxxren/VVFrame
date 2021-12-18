@@ -14,7 +14,7 @@ final class EdgesFeatureView: FeatureView {
     }
 
     override func performLayout() {
-        greenView.configureFrame { maker in
+        greenView.makeFrame { maker in
             maker.edges(insets: .init(top: 10, left: 20, bottom: 30, right: 40))
         }
     }

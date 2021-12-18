@@ -4,15 +4,15 @@
 
 import UIKit
 
-/// Phantom type for `nui_left`, `nui_right`, `nui_centerX` relations.
+/// Phantom type for `vv_left`, `vv_right`, `vv_centerX` relations.
 
 public protocol HorizontalRelation {}
 
-/// Phantom type for `nui_top`, `nui_bottom`, `nui_centerY` relations.
+/// Phantom type for `vv_top`, `vv_bottom`, `vv_centerY` relations.
 
 public protocol VerticalRelation {}
 
-/// Phantom type for `nui_height`, `nui_width` relations.
+/// Phantom type for `vv_height`, `vv_width` relations.
 
 public protocol SizeRelation {}
 

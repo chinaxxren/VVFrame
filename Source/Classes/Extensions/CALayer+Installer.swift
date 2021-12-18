@@ -10,7 +10,7 @@ public extension CALayer {
     ///
     /// - parameter installerBlock: The installer block within which you can configure frame relations.
 
-    func configureFrame(installerBlock: InstallerBlock) {
+    func makeFrame(installerBlock: InstallerBlock) {
         guard superlayer != nil else {
             return
         }
@@ -24,9 +24,9 @@ public extension Sequence where Iterator.Element: CALayer {
     ///
     /// - parameter installerBlock: The installer block within which you can configure frame relations.
 
-    func configureFrames(installerBlock: InstallerBlock) {
+    func makeFrames(installerBlock: InstallerBlock) {
         for layer in self {
-            layer.configureFrame(installerBlock: installerBlock)
+            layer.makeFrame(installerBlock: installerBlock)
         }
     }
 }
@@ -66,7 +66,7 @@ public extension Collection where Iterator.Element: CALayer {
                 relationHeight = height.value
 
             case let .horizontal(lInset, rInset):
-                container.configureFrame { maker in
+                container.makeFrame { maker in
                     maker.left(inset: lInset).right(inset: rInset)
                 }
                 let width = container.frame.width
@@ -75,7 +75,7 @@ public extension Collection where Iterator.Element: CALayer {
                 relationWidth = width
 
             case let .vertical(tInset, bInset):
-                container.configureFrame { maker in
+                container.makeFrame { maker in
                     maker.top(inset: tInset).bottom(inset: bInset)
                 }
                 let height = container.frame.height
@@ -91,7 +91,7 @@ public extension Collection where Iterator.Element: CALayer {
 
         installerBlock()
 
-        container.configureFrame { maker in
+        container.makeFrame { maker in
             maker._container()
         }
 

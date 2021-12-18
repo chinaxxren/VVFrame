@@ -44,12 +44,12 @@ class FeatureViewController: UIViewController {
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
 
-        descriptionLabel.configureFrame { maker in
-            maker.left(inset: 16).right(inset: 16).top(to: view.nui_safeArea.top, inset: 30).height(50)
+        descriptionLabel.makeFrame { maker in
+            maker.left(inset: 16).right(inset: 16).top(to: view.vv_safeArea.top, inset: 30).height(50)
         }
 
-        featureView.configureFrame { maker in
-            maker.left().right().top(to: descriptionLabel.nui_bottom, inset: 30).bottom()
+        featureView.makeFrame { maker in
+            maker.left().right().top(to: descriptionLabel.vv_bottom, inset: 30).bottom()
         }
     }
 }
