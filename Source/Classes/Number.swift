@@ -4,6 +4,7 @@
 
 import Foundation
 import struct CoreGraphics.CGFloat
+import struct CoreGraphics.CGSize
 
 public protocol Number {
     var value: CGFloat { get }
@@ -24,5 +25,15 @@ extension Double: Number {
 extension Int: Number {
     public var value: CGFloat {
         return CGFloat(self)
+    }
+}
+
+public protocol SizeNumber {
+    var value: CGSize { get }
+}
+
+extension CGSize: SizeNumber {
+    public var value: CGSize {
+        return CGSize(width: self.width, height: self.height)
     }
 }

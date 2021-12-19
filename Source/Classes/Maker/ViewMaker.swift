@@ -37,10 +37,10 @@ public final class ViewMaker: Maker {
     ///
     /// - returns: `Maker` instance for chaining relations.
 
-    @discardableResult public func sizeThatFits(_ size: CGSize) -> ViewMaker {
-        let fitSize = uiView.sizeThatFits(size)
-        let width = Swift.min(size.width, fitSize.width)
-        let height = Swift.min(size.height, fitSize.height)
+    @discardableResult public func sizeThatFits(_ size: SizeNumber) -> ViewMaker {
+        let fitSize = uiView.sizeThatFits(size.value)
+        let width = Swift.min(size.value.width, fitSize.width)
+        let height = Swift.min(size.value.height, fitSize.height)
         setHighPriorityValue(width, for: .width)
         setHighPriorityValue(height, for: .height)
         return self
