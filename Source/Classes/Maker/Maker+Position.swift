@@ -20,7 +20,7 @@ extension Maker {
         }
         return left(RelationView(element: superelement, relation: .left), inset)
     }
-
+    
     /// Creates left relation.
     ///
     /// Use this method when you want to join left side of current view with some horizontal side of another view.
@@ -425,5 +425,30 @@ extension Maker {
         }
         handlers.append((.low, handler))
         return self
+    }
+    
+    @discardableResult public func safeAreaLeft() -> Self {
+        let safeAreaInsets = SafeAreaInsets()
+        return left(safeAreaInsets.left)
+    }
+    
+    @discardableResult public func safeAreaTop() -> Self {
+        let safeAreaInsets = SafeAreaInsets()
+        return top(safeAreaInsets.top)
+    }
+    
+    @discardableResult public func safeAreaRight() -> Self {
+        let safeAreaInsets = SafeAreaInsets()
+        return right(safeAreaInsets.right)
+    }   
+    
+    @discardableResult public func safeAreaBottom() -> Self {
+        let safeAreaInsets = SafeAreaInsets()
+        return bottom(safeAreaInsets.bottom)
+    }
+    
+    @discardableResult public func safeArea() -> Self {
+        let safeAreaInsets = SafeAreaInsets()
+        return left(safeAreaInsets.left).top(safeAreaInsets.top).right(safeAreaInsets.right).bottom(safeAreaInsets.bottom)
     }
 }

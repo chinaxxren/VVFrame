@@ -30,7 +30,7 @@ public struct Sides: OptionSet {
     public static let horizontal: Sides = [.left, .right]
 
     public static let all: Sides = [.vertical, .horizontal]
-
+    
     public init(rawValue: Int) {
         self.rawValue = rawValue
     }
@@ -56,6 +56,14 @@ public class Maker {
     var bottomParameter: SideParameter?
     var rightParameter: SideParameter?
 
+    public func SafeAreaInsets() -> UIEdgeInsets {
+        if #available(iOS 11.0, *) {
+            return UIApplication.shared.windows.first?.safeAreaInsets ?? UIEdgeInsets.zero
+        } else {
+            return UIEdgeInsets.zero
+        }
+    }
+    
     public static func initializeKeyboardTracking(with window: UIWindow? = nil) {
         guard let window = window ?? UIApplication.shared.windows.first else {
             assertionFailure("No window to attach to.")

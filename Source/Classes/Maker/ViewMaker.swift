@@ -11,7 +11,7 @@ public final class ViewMaker: Maker {
     /// - returns: `Maker` instance for chaining relations.
 
     unowned let uiView: UIView
-
+    
     init(view: UIView) {
         self.uiView = view
         super.init(element: .view(view))
