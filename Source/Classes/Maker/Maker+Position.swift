@@ -449,6 +449,6 @@ extension Maker {
     
     @discardableResult public func safeArea() -> Self {
         let safeAreaInsets = SafeAreaInsets()
-        return left(safeAreaInsets.left).top(safeAreaInsets.top).right(safeAreaInsets.right).bottom(safeAreaInsets.bottom)
+        return edges(safeAreaInsets)
     }
 }
