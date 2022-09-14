@@ -23,7 +23,7 @@ extension Maker {
     /// - parameter right:  The right inset relation relatively super instance.
     ///
     /// - returns: `Maker` instance for chaining relations.
-    @discardableResult public func edges(_ top: Number? = nil,_ left: Number? = nil,_ bottom: Number? = nil,_ right: Number? = nil) -> Self {
+    @discardableResult public func edges(_ top: Number? = nil, _ left: Number? = nil, _ bottom: Number? = nil, _ right: Number? = nil) -> Self {
         apply(self.top, top)
         apply(self.left, left)
         apply(self.bottom, bottom)
@@ -38,7 +38,7 @@ extension Maker {
     /// - parameter sides: The sides which will inculed from edge insets to setting relations.
     ///
     /// - returns: `Maker` instance for chaining relations.
-    @discardableResult public func edges(_ insets: UIEdgeInsets,_ sides: Sides = .all) -> Self {
+    @discardableResult public func edges(_ insets: UIEdgeInsets, sides: Sides = .all) -> Self {
         sides.forEach { side in
             switch side {
             case .bottom:

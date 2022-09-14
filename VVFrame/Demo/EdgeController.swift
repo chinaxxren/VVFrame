@@ -56,7 +56,7 @@ class EdgeController : UIViewController {
         view1.makeFrame { maker in
             maker.top(0)
             maker.bottom(0)
-            maker.edges(insets,[.left, .right])
+            maker.edges(insets,sides: [.left, .right])
         }
     }
     
@@ -65,7 +65,7 @@ class EdgeController : UIViewController {
         view1.makeFrame { maker in
             maker.top(0)
             maker.bottom(0)
-            maker.edges(insets,[.left, .right])
+            maker.edges(insets,sides: [.left, .right])
         }
     }
     
@@ -74,7 +74,7 @@ class EdgeController : UIViewController {
         view1.makeFrame { maker in
             maker.top(0)
             maker.bottom(0)
-            maker.edges(insets,.horizontal)
+            maker.edges(insets,sides: .horizontal)
         }
     }
     
