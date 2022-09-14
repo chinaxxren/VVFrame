@@ -174,7 +174,7 @@ public class Maker {
         return self
     }
 
-    func apply(_ f: ((Number) -> Self), _ inset: Number?) {
+    func apply(_ f: ((Number) -> Maker), _ inset: Number?) {
         if let inset = inset {
             _ = f(inset)
         }

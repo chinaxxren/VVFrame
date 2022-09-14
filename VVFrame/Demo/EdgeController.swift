@@ -35,7 +35,7 @@ class EdgeController : UIViewController {
             maker.size(200, 200)
         }
         
-        test7()
+        test2()
     }
     
     

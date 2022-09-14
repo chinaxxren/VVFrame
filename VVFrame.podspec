@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = "VVFrame"
-  spec.version      = "0.0.2"
+  spec.version      = "0.0.3"
   spec.summary      = "VVFrame"
   spec.homepage     = "https://github.com/chinaxxren/VVFrame"
   spec.license      = "MIT"
