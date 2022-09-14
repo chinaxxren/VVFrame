@@ -23,13 +23,13 @@ extension Maker {
     /// - parameter right:  The right inset relation relatively super instance.
     ///
     /// - returns: `Maker` instance for chaining relations.
-    @discardableResult public func edges(_ top: Number? = nil,_ left: Number? = nil,_ bottom: Number? = nil,_ right: Number? = nil) -> Self {
-        _ = apply(self.top, top)
-        _ = apply(self.left, left)
-        _ = apply(self.bottom, bottom)
-        _ = apply(self.right, right)
-        return self
-    }
+    //@discardableResult public func edges(_ top: Number? = nil,_ left: Number? = nil,_ bottom: Number? = nil,_ right: Number? = nil) -> Self {
+        //_ = apply(self.top, top)
+        //_ = apply(self.left, left)
+        //_ = apply(self.bottom, bottom)
+        //_ = apply(self.right, right)
+        //return self
+    //}
 
     /// Creates edge relations for super instance.
     ///
